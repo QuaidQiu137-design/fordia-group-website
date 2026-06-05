@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Flexo Varnish - Industrial Precision</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-primary": "#b0c8eb",
+                      "error-container": "#ffdad6",
+                      "background": "#f8f9ff",
+                      "on-tertiary-container": "#3c88ff",
+                      "inverse-surface": "#213145",
+                      "surface-bright": "#f8f9ff",
+                      "on-surface": "#0b1c30",
+                      "surface-container-high": "#dce9ff",
+                      "primary-fixed-dim": "#b0c8eb",
+                      "tertiary-container": "#002251",
+                      "tertiary": "#000d28",
+                      "surface-dim": "#cbdbf5",
+                      "on-primary-fixed-variant": "#314865",
+                      "primary": "#000f22",
+                      "on-tertiary-fixed-variant": "#004493",
+                      "surface-container-highest": "#d3e4fe",
+                      "tertiary-fixed": "#d8e2ff",
+                      "on-secondary-container": "#572000",
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed": "#001c37",
+                      "on-error": "#ffffff",
+                      "secondary-fixed": "#ffdbcc",
+                      "inverse-on-surface": "#eaf1ff",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-container": "#e5eeff",
+                      "on-secondary-fixed": "#351000",
+                      "secondary-fixed-dim": "#ffb693",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-fixed-dim": "#adc6ff",
+                      "on-surface-variant": "#43474d",
+                      "on-secondary-fixed-variant": "#7a3000",
+                      "on-primary-container": "#768dad",
+                      "error": "#ba1a1a",
+                      "secondary": "#a04100",
+                      "primary-container": "#0a2540",
+                      "surface-tint": "#49607e",
+                      "on-background": "#0b1c30",
+                      "primary-fixed": "#d2e4ff",
+                      "on-tertiary-fixed": "#001a41",
+                      "on-primary": "#ffffff",
+                      "surface-container-low": "#eff4ff",
+                      "outline": "#74777e",
+                      "outline-variant": "#c4c6ce",
+                      "surface": "#f8f9ff",
+                      "surface-variant": "#d3e4fe",
+                      "on-error-container": "#93000a",
+                      "secondary-container": "#fe6b00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "16px",
+                      "base": "8px",
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "max-width": "1440px"
+              },
+              "fontFamily": {
+                      "headline-sm": [
+                              "Inter"
+                      ],
+                      "headline-xl-mobile": [
+                              "Inter"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "headline-xl": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "JetBrains Mono"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-sm": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "44px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "14px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .technical-glow {
+            box-shadow: 0px 4px 20px rgba(10, 37, 64, 0.08);
+        }
+      </style>
+<meta content="Flexo Varnish - Industrial Precision - Premium water-based and UV flexographic inks for paper labels, packaging, film, and cups by FORDIA. Formulated for high-speed production runs." name="description"/><meta content="Flexo Varnish - Industrial Precision" property="og:title"/><meta content="Flexo Varnish - Industrial Precision - Premium water-based and UV flexographic inks for paper labels, packaging, film, and cups by FORDIA. Formulated for high-speed production runs." property="og:description"/><meta content="website" property="og:type"/><meta content="https://yourusername.github.io/fordia-website/flexo_varnish_fordia_updated_header.html" property="og:url"/><meta content="FORDIA Industrial Solutions" property="og:site_name"/></head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex flex-col shadow-sm">
+<div class="w-full bg-[#0a2540] text-white py-1.5 px-margin-desktop flex justify-between items-center text-xs font-label-md">
+<div class="flex items-center gap-6">
+<a class="flex items-center gap-1.5 hover:text-secondary-fixed-dim transition-colors" href="mailto:paul.qiu@fordiagroup.com">
+<span class="material-symbols-outlined text-[14px]">mail</span> paul.qiu@fordiagroup.com
+            </a>
+<a class="flex items-center gap-1.5 hover:text-secondary-fixed-dim transition-colors" href="tel:+8617612334939">
+<span class="material-symbols-outlined text-[14px]">call</span> +86 17612334939
+            </a>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">language</span>
+<select class="bg-transparent border-none text-white text-xs py-0 pl-1 pr-4 focus:ring-0 cursor-pointer">
+<option class="text-primary" value="en">English</option>
+<option class="text-primary" value="zh">Chinese</option>
+</select>
+</div>
+<div class="relative flex items-center">
+<input class="bg-white/10 border border-white/20 rounded text-xs px-2 py-1 text-white placeholder-white/60 focus:outline-none focus:border-white/40 w-32" placeholder="Search..." type="text"/>
+<span class="material-symbols-outlined text-[14px] absolute right-2 text-white/60 pointer-events-none">search</span>
+</div>
+<div class="flex items-center gap-3">
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#">
+<svg class="lucide lucide-facebook" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+</a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#">
+<svg class="lucide lucide-message-circle" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg>
+</a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#">
+<svg class="lucide lucide-linkedin" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect height="12" width="4" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+</a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#">
+<svg class="lucide lucide-youtube" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
+</a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#">
+<svg class="lucide lucide-music" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+</a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#">
+<svg class="lucide lucide-instagram" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="w-full h-20 bg-surface border-b border-outline-variant flex items-center justify-between px-margin-desktop">
+<a class="text-headline-md font-headline-md font-bold text-[#0a2540] tracking-tight" href="index.html">FORDIA</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-[#0a2540] hover:text-secondary-container transition-colors duration-200 uppercase tracking-wide" href="index.html">HOME</a>
+<div class="group relative py-7">
+<a class="font-label-md text-label-md text-[#0a2540] hover:text-secondary-container transition-colors duration-200 uppercase tracking-wide flex items-center gap-1 cursor-pointer" href="products_landing_fordia_with_navigation.html">
+    PRODUCTS
+    <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+</a>
+<div class="absolute top-full left-0 w-[480px] bg-white shadow-xl border border-outline-variant opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 p-6">
+<div class="grid grid-cols-2 gap-x-8 gap-y-4">
+<a class="font-body-sm text-[#0a2540] hover:text-secondary-container hover:translate-x-1 transition-all flex items-center gap-2" href="fordia_underpacking_paper_detail.html">FORDIA Underpacking Paper</a>
+<a class="font-body-sm text-[#0a2540] hover:text-secondary-container hover:translate-x-1 transition-all flex items-center gap-2" href="fordia_underpacking_film_detail.html">FORDIA Underpacking Film</a>
+<a class="font-body-sm text-[#0a2540] hover:text-secondary-container hover:translate-x-1 transition-all flex items-center gap-2" href="#">FORDIA Anti-marking Paper / Film</a>
+<a class="font-body-sm text-[#0a2540] hover:text-secondary-container hover:translate-x-1 transition-all flex items-center gap-2" href="conventional_offset_ink_fordia_updated_header.html">Offset Ink</a>
+<a class="font-body-sm text-[#0a2540] hover:text-secondary-container hover:translate-x-1 transition-all flex items-center gap-2" href="flexo_ink_fordia_updated_header.html">Flexo Ink</a>
+<a class="font-body-sm text-[#0a2540] hover:text-secondary-container hover:translate-x-1 transition-all flex items-center gap-2" href="silk_screen_ink_fordia_updated_header.html">Silk Screen Ink</a>
+<a class="font-body-sm text-[#0a2540] hover:text-secondary-container hover:translate-x-1 transition-all flex items-center gap-2" href="varnish_ink_fordia_updated_header.html">Varnish Ink</a>
+<a class="font-body-sm text-[#0a2540] hover:text-secondary-container hover:translate-x-1 transition-all flex items-center gap-2" href="printing_materials_fordia_updated_plastic_ink_knife_image.html">Printing Materials</a>
+<a class="font-body-sm text-[#0a2540] hover:text-secondary-container hover:translate-x-1 transition-all flex items-center gap-2" href="printing_chemicals_fordia_3_column_grid.html">Printing Chemical</a>
+<a class="font-body-sm text-[#0a2540] hover:text-secondary-container hover:translate-x-1 transition-all flex items-center gap-2" href="printing_spare_parts_fordia.html">Printing Spare Parts</a>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant">
+<a class="font-label-sm text-secondary-container hover:underline uppercase tracking-widest flex items-center gap-1" href="products_landing_fordia_with_navigation.html">
+        View All Products <span class="material-symbols-outlined text-xs">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<a class="font-label-md text-label-md text-[#0a2540] hover:text-secondary-container transition-colors duration-200 uppercase tracking-wide" href="news_media_fordia_updated_header.html">NEWS</a>
+<a class="font-label-md text-label-md text-[#0a2540] hover:text-secondary-container transition-colors duration-200 uppercase tracking-wide" href="case_studies_applications_fordia_updated_header.html">CASE</a>
+<a class="font-label-md text-label-md text-[#0a2540] hover:text-secondary-container transition-colors duration-200 uppercase tracking-wide" href="about_us_fordia_updated_factory_images.html">ABOUT US</a>
+<a class="font-label-md text-label-md text-[#0a2540] hover:text-secondary-container transition-colors duration-200 uppercase tracking-wide" href="contact_us_fordia_updated_header.html">CONTACT US</a>
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow"><nav aria-label="Breadcrumb" class="bg-surface-container-low border-b border-outline-variant"><div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-3 flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant"><a class="hover:text-secondary transition-colors" href="index.html">Home</a><span class="material-symbols-outlined text-[14px]">chevron_right</span><a class="hover:text-secondary transition-colors" href="products_landing_fordia_with_navigation.html">Products</a><span class="material-symbols-outlined text-[14px]">chevron_right</span><a class="hover:text-secondary transition-colors" href="varnish_ink_fordia_updated_header.html">Varnish Ink</a><span class="material-symbols-outlined text-[14px]">chevron_right</span><a class="text-primary font-bold" href="flexo_varnish_fordia_updated_header.html">Flexo Varnish</a></div></nav><nav aria-label="Breadcrumb" class="bg-surface-container-low border-b border-outline-variant pt-24 pb-4 px-margin-mobile md:px-margin-desktop"><div class="max-w-max-width mx-auto flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant"><a class="hover:text-secondary transition-colors" href="index.html">Home</a><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-secondary transition-colors" href="products_landing_fordia_with_navigation.html">Products</a><span class="material-symbols-outlined text-xs">chevron_right</span><a class="hover:text-secondary transition-colors" href="varnish_ink_fordia_updated_header.html">Varnish Ink</a><span class="material-symbols-outlined text-xs">chevron_right</span><a class="text-primary font-bold" href="flexo_varnish_fordia_updated_header.html">Flexo Varnish</a></div></nav>
+<!-- Hero Section -->
+<section class="bg-surface-container-lowest border-b border-outline-variant py-12">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24 gap-gutter items-center flex flex-col text-center">
+<div class="flex flex-col items-center text-center">
+<h1 class="text-headline-xl-mobile md:text-headline-xl font-headline-xl-mobile md:font-headline-xl text-primary mb-6">Flexo Varnish</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-8 max-w-3xl">High-performance coatings engineered for flexographic printing systems, offering exceptional finish quality and curing speed.</p>
+<div class="flex gap-4 justify-center">
+<button class="bg-secondary hover:bg-secondary-container text-on-secondary font-headline-sm text-label-md rounded px-6 py-3 transition-colors">
+                            Technical Specifications
+                        </button>
+<button class="border border-primary text-primary hover:bg-surface-container-low font-headline-sm text-label-md rounded px-6 py-3 transition-colors">
+                            Contact Sales
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Product List -->
+<section class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-24">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Product 1 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded flex flex-col xl:flex-row hover:technical-glow transition-shadow group">
+<div class="w-full xl:w-2/5 h-48 xl:h-auto bg-surface-container p-4 flex items-center justify-center border-b xl:border-b-0 xl:border-r border-outline-variant relative overflow-hidden">
+<img alt="Close up macro photography of a highly glossy, pristine clear UV curable varnish droplet resting on a metallic industrial surface. The lighting is crisp and cool, highlighting the perfect clarity and rapid curing properties of the chemical coating against a sterile, high-tech background." class="object-cover w-full h-full mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="Close up macro photography of a highly glossy, pristine clear UV curable varnish droplet resting on a metallic industrial surface. The lighting is crisp and cool, highlighting the perfect clarity and rapid curing properties of the chemical coating against a sterile, high-tech background." src="./assets/images/img_1ea962b6d16c5584bb9a3a65241f2d8c.jpg"/>
+</div>
+<div class="w-full xl:w-3/5 p-6 flex flex-col justify-between">
+<div>
+<h2 class="text-headline-md font-headline-md text-primary mb-2 group-hover:text-secondary transition-colors">UV flexo gloss Varnish</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">A high-clarity UV curable varnish for general flexo applications.</p>
+<div class="mb-4">
+<span class="text-label-sm font-label-sm text-primary uppercase block mb-1">Applications</span>
+<p class="text-body-sm font-body-sm text-on-surface">Food packaging, labels, brochures.</p>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">High gloss</span>
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">Rapid curing</span>
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">Excellent leveling</span>
+</div>
+</div>
+<a class="inline-block w-full md:w-auto border border-primary text-primary hover:bg-surface-container-low font-headline-sm text-label-md rounded px-4 py-2 transition-colors self-start text-center" href="#">
+                            View Details
+                        </a>
+</div>
+</article>
+<!-- Product 2 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded flex flex-col xl:flex-row hover:technical-glow transition-shadow group">
+<div class="w-full xl:w-2/5 h-48 xl:h-auto bg-surface-container p-4 flex items-center justify-center border-b xl:border-b-0 xl:border-r border-outline-variant relative overflow-hidden">
+<img alt="Abstract macro shot showing a specialized tactile texture coating with a high-contrast drip-off effect on a premium dark packaging substrate. The surface exhibits a contrast between matte and gloss areas, illuminated by dramatic side lighting in a professional studio setting." class="object-cover w-full h-full mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="Abstract macro shot showing a specialized tactile texture coating with a high-contrast drip-off effect on a premium dark packaging substrate. The surface exhibits a contrast between matte and gloss areas, illuminated by dramatic side lighting in a professional studio setting." src="./assets/images/img_89bb279caad46e0a314c0a889dfbee4c.jpg"/>
+</div>
+<div class="w-full xl:w-3/5 p-6 flex flex-col justify-between">
+<div>
+<h2 class="text-headline-md font-headline-md text-primary mb-2 group-hover:text-secondary transition-colors">UV Flexo Drip off/Texture Matt Varnish</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">Specialized varnish for creating tactile textures and high-contrast drip-off effects.</p>
+<div class="mb-4">
+<span class="text-label-sm font-label-sm text-primary uppercase block mb-1">Applications</span>
+<p class="text-body-sm font-body-sm text-on-surface">Premium cosmetics packaging, specialty labels.</p>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">Unique texture</span>
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">Sharp contrast</span>
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">High chemical resistance</span>
+</div>
+</div>
+<a class="inline-block w-full md:w-auto border border-primary text-primary hover:bg-surface-container-low font-headline-sm text-label-md rounded px-4 py-2 transition-colors self-start text-center" href="#">
+                            View Details
+                        </a>
+</div>
+</article>
+<!-- Product 3 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded flex flex-col xl:flex-row hover:technical-glow transition-shadow group">
+<div class="w-full xl:w-2/5 h-48 xl:h-auto bg-surface-container p-4 flex items-center justify-center border-b xl:border-b-0 xl:border-r border-outline-variant relative overflow-hidden">
+<img alt="A perfectly smooth, non-reflective matte finish applied to a luxury folding carton, demonstrating superior scuff resistance. The object is placed on a minimalist gray studio background with soft, diffused lighting that highlights the dead-flat, elegant nature of the varnish." class="object-cover w-full h-full mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="A perfectly smooth, non-reflective matte finish applied to a luxury folding carton, demonstrating superior scuff resistance. The object is placed on a minimalist gray studio background with soft, diffused lighting that highlights the dead-flat, elegant nature of the varnish." src="./assets/images/img_33eee1bdd8f063d240ca0685f33ddf4a.jpg"/>
+</div>
+<div class="w-full xl:w-3/5 p-6 flex flex-col justify-between">
+<div>
+<h2 class="text-headline-md font-headline-md text-primary mb-2 group-hover:text-secondary transition-colors">UV Flexo Matt Varnish</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">Provides a smooth, non-reflective matte finish with superior scuff resistance.</p>
+<div class="mb-4">
+<span class="text-label-sm font-label-sm text-primary uppercase block mb-1">Applications</span>
+<p class="text-body-sm font-body-sm text-on-surface">Book covers, luxury folding cartons.</p>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">Dead-flat finish</span>
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">Anti-scratch</span>
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">Low yellowing</span>
+</div>
+</div>
+<a class="inline-block w-full md:w-auto border border-primary text-primary hover:bg-surface-container-low font-headline-sm text-label-md rounded px-4 py-2 transition-colors self-start text-center" href="#">
+                            View Details
+                        </a>
+</div>
+</article>
+<!-- Product 4 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded flex flex-col xl:flex-row hover:technical-glow transition-shadow group">
+<div class="w-full xl:w-2/5 h-48 xl:h-auto bg-surface-container p-4 flex items-center justify-center border-b xl:border-b-0 xl:border-r border-outline-variant relative overflow-hidden">
+<img alt="An advanced LED UV curing system illuminating a freshly coated flexible packaging substrate with a high brilliance gloss varnish. The vibrant, energy-efficient blue LED light casts a futuristic glow over the industrial machinery, emphasizing instant drying technology and low heat emission." class="object-cover w-full h-full mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="An advanced LED UV curing system illuminating a freshly coated flexible packaging substrate with a high brilliance gloss varnish. The vibrant, energy-efficient blue LED light casts a futuristic glow over the industrial machinery, emphasizing instant drying technology and low heat emission." src="./assets/images/img_8ca47b9477cd061bf86ff487f643ad00.jpg"/>
+</div>
+<div class="w-full xl:w-3/5 p-6 flex flex-col justify-between">
+<div>
+<h2 class="text-headline-md font-headline-md text-primary mb-2 group-hover:text-secondary transition-colors">led uv gloss varnish for flexo machine</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">Optimized for LED curing systems, delivering high brilliance and energy efficiency.</p>
+<div class="mb-4">
+<span class="text-label-sm font-label-sm text-primary uppercase block mb-1">Applications</span>
+<p class="text-body-sm font-body-sm text-on-surface">Flexible packaging, heat-sensitive substrates.</p>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">LED optimized</span>
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">Low heat emission</span>
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">Instant drying</span>
+</div>
+</div>
+<a class="inline-block w-full md:w-auto border border-primary text-primary hover:bg-surface-container-low font-headline-sm text-label-md rounded px-4 py-2 transition-colors self-start text-center" href="#">
+                            View Details
+                        </a>
+</div>
+</article>
+<!-- Product 5 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded flex flex-col xl:flex-row hover:technical-glow transition-shadow group">
+<div class="w-full xl:w-2/5 h-48 xl:h-auto bg-surface-container p-4 flex items-center justify-center border-b xl:border-b-0 xl:border-r border-outline-variant relative overflow-hidden">
+<img alt="High-speed cold foiling process showing precision adhesive varnish applied to decorative labels. The metallic foil gleams brightly against a pristine white industrial background, showcasing excellent foil adhesion and clean release characteristics typical of high-end packaging." class="object-cover w-full h-full mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="High-speed cold foiling process showing precision adhesive varnish applied to decorative labels. The metallic foil gleams brightly against a pristine white industrial background, showcasing excellent foil adhesion and clean release characteristics typical of high-end packaging." src="./assets/images/img_4b1813a98fbd742256ff40ec6827a707.jpg"/>
+</div>
+<div class="w-full xl:w-3/5 p-6 flex flex-col justify-between">
+<div>
+<h2 class="text-headline-md font-headline-md text-primary mb-2 group-hover:text-secondary transition-colors">led uv cold foil varnish</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">Precision adhesive varnish for high-speed cold foiling applications.</p>
+<div class="mb-4">
+<span class="text-label-sm font-label-sm text-primary uppercase block mb-1">Applications</span>
+<p class="text-body-sm font-body-sm text-on-surface">Decorative labels, high-end packaging.</p>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">Excellent foil adhesion</span>
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">Clean release</span>
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">Fast curing</span>
+</div>
+</div>
+<a class="inline-block w-full md:w-auto border border-primary text-primary hover:bg-surface-container-low font-headline-sm text-label-md rounded px-4 py-2 transition-colors self-start text-center" href="#">
+                            View Details
+                        </a>
+</div>
+</article>
+<!-- Product 6 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded flex flex-col xl:flex-row hover:technical-glow transition-shadow group">
+<div class="w-full xl:w-2/5 h-48 xl:h-auto bg-surface-container p-4 flex items-center justify-center border-b xl:border-b-0 xl:border-r border-outline-variant relative overflow-hidden">
+<img alt="A roll of specialized industrial release liner coated with a highly uniform, functional release coating varnish. The image focuses on the microscopic texture and stable release force properties of the material, presented in a clinical, brightly lit engineering laboratory setting." class="object-cover w-full h-full mix-blend-multiply opacity-80 group-hover:scale-105 transition-transform duration-500" data-alt="A roll of specialized industrial release liner coated with a highly uniform, functional release coating varnish. The image focuses on the microscopic texture and stable release force properties of the material, presented in a clinical, brightly lit engineering laboratory setting." src="./assets/images/img_42b73ef76120f61a84265dd58d31a242.jpg"/>
+</div>
+<div class="w-full xl:w-3/5 p-6 flex flex-col justify-between">
+<div>
+<h2 class="text-headline-md font-headline-md text-primary mb-2 group-hover:text-secondary transition-colors">Release Coating Varnish for flexo machine</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mb-4">Functional coating providing controlled release properties for specialized industrial use.</p>
+<div class="mb-4">
+<span class="text-label-sm font-label-sm text-primary uppercase block mb-1">Applications</span>
+<p class="text-body-sm font-body-sm text-on-surface">Release liners, pressure sensitive labels.</p>
+</div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">Stable release force</span>
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">Uniform coverage</span>
+<span class="bg-surface-container-low border border-outline-variant text-on-surface text-label-sm font-label-sm px-2 py-1 rounded-sm">High thermal stability</span>
+</div>
+</div>
+<a class="inline-block w-full md:w-auto border border-primary text-primary hover:bg-surface-container-low font-headline-sm text-label-md rounded px-4 py-2 transition-colors self-start text-center" href="#">
+                            View Details
+                        </a>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-tertiary-container w-full mt-auto border-t border-outline dark:border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center py-base px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto gap-4 md:gap-0">
+<div class="text-headline-sm font-headline-sm font-bold text-on-primary dark:text-on-tertiary-container">
+                Industrial Precision
+            </div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-white text-label-sm font-label-sm hover:text-secondary-fixed transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-white text-label-sm font-label-sm hover:text-secondary-fixed transition-colors" href="#">Terms of Service</a>
+<a class="text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-white text-label-sm font-label-sm hover:text-secondary-fixed transition-colors" href="#">SDS Search</a>
+<a class="text-on-primary-fixed-variant dark:text-on-tertiary-fixed-variant hover:text-white text-label-sm font-label-sm hover:text-secondary-fixed transition-colors" href="#">Global Distribution</a>
+</div>
+<div class="text-body-sm font-body-sm text-on-primary dark:text-on-tertiary-container opacity-80 text-center md:text-right">
+                © 2024 Industrial Precision Materials Science. All rights reserved.
+            </div>
+</div>
+</footer>
+<script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // 1. Intercept all form submissions (e.g. Inquiries, Contact Forms, Quotes)
+                const forms = document.querySelectorAll('form');
+                forms.forEach(form => {
+                    form.addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        
+                        // Basic validation
+                        const emailInput = form.querySelector('input[type="email"]');
+                        if (emailInput && !emailInput.value.includes('@')) {
+                            showToast('请输入有效的邮箱地址！', 'error');
+                            return;
+                        }
+                        
+                        // Show premium success toast
+                        showToast('询盘提交成功！感谢您的垂询，我们的团队会尽快与您联系。', 'success');
+                        
+                        // Reset form
+                        form.reset();
+                    });
+                });
+
+                // 2. Enhance generic buttons/links with smooth interactions
+                const buttons = document.querySelectorAll('button:not([type="submit"]), a[href="#"]');
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const text = btn.innerText.trim().toLowerCase();
+                        if (text === 'request quote' || text === 'contact us') {
+                            const contactSection = document.querySelector('form');
+                            if (contactSection) {
+                                e.preventDefault();
+                                contactSection.scrollIntoView({ behavior: 'smooth' });
+                            } else {
+                                window.location.href = 'contact_us_fordia_updated_header.html';
+                            }
+                        } else if (btn.tagName === 'A' && btn.getAttribute('href') === '#') {
+                            e.preventDefault();
+                            showToast('该功能正在开发中！请访问产品页面查看详情。', 'info');
+                        }
+                    });
+                });
+
+                // 3. Mobile Menu toggle handler
+                const menuBtn = document.querySelector('header button.lg\\:hidden, header button.md\\:hidden');
+                if (menuBtn) {
+                    menuBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        const nav = document.querySelector('header nav');
+                        if (nav) {
+                            if (nav.classList.contains('hidden')) {
+                                nav.classList.remove('hidden');
+                                nav.classList.add('flex', 'flex-col', 'absolute', 'top-20', 'left-0', 'w-full', 'bg-surface', 'border-b', 'border-outline-variant', 'p-6', 'gap-4', 'shadow-lg');
+                            } else {
+                                nav.classList.add('hidden');
+                                nav.classList.remove('flex', 'flex-col', 'absolute', 'top-20', 'left-0', 'w-full', 'bg-surface', 'border-b', 'border-outline-variant', 'p-6', 'gap-4', 'shadow-lg');
+                            }
+                        }
+                    });
+                }
+
+                // 4. Create and inject Toast notification CSS & Container
+                function showToast(message, type = 'success') {
+                    let container = document.getElementById('toast-container');
+                    if (!container) {
+                        container = document.createElement('div');
+                        container.id = 'toast-container';
+                        container.className = 'fixed bottom-5 right-5 z-[9999] flex flex-col gap-3 max-w-sm w-full px-4 md:px-0';
+                        document.body.appendChild(container);
+                        
+                        if (!document.getElementById('toast-styles')) {
+                            const style = document.createElement('style');
+                            style.id = 'toast-styles';
+                            style.textContent = `
+                                @keyframes slideIn {
+                                    from { transform: translateX(100%); opacity: 0; }
+                                    to { transform: translateX(0); opacity: 1; }
+                                }
+                                @keyframes fadeOut {
+                                    to { transform: translateY(-10px); opacity: 0; }
+                                }
+                                .toast-card {
+                                    animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+                                    backdrop-filter: blur(12px);
+                                    -webkit-backdrop-filter: blur(12px);
+                                }
+                            `;
+                            document.head.appendChild(style);
+                        }
+                    }
+
+                    const toast = document.createElement('div');
+                    let bgColor = 'bg-slate-900/95 text-white border-slate-700/50';
+                    let icon = 'info';
+                    
+                    if (type === 'success') {
+                        bgColor = 'bg-emerald-900/95 text-emerald-50 border-emerald-500/30';
+                        icon = 'check_circle';
+                    } else if (type === 'error') {
+                        bgColor = 'bg-rose-900/95 text-rose-50 border-rose-500/30';
+                        icon = 'error';
+                    }
+                    
+                    toast.className = `toast-card flex items-start gap-3 p-4 rounded-xl border shadow-lg ${bgColor}`;
+                    toast.innerHTML = `
+                        <span class="material-symbols-outlined text-[20px] shrink-0">${icon}</span>
+                        <div class="flex-grow text-sm font-medium leading-5">${message}</div>
+                        <button class="text-white/40 hover:text-white transition-colors ml-auto shrink-0" onclick="this.parentElement.remove()">
+                            <span class="material-symbols-outlined text-[16px]">close</span>
+                        </button>
+                    `;
+                    
+                    container.appendChild(toast);
+                    
+                    setTimeout(() => {
+                        toast.style.animation = 'fadeOut 0.4s ease forwards';
+                        setTimeout(() => toast.remove(), 400);
+                    }, 4000);
+                }
+            });
+            </script></body></html>

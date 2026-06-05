@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cylinder Jacket - FORDIA</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#a04100",
+                        "tertiary-fixed-dim": "#b0c8eb",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#0a2540",
+                        "surface-container-low": "#eff4ff",
+                        "outline-variant": "#c4c6ce",
+                        "outline-muted": "#c4c6ce",
+                        "tertiary-fixed": "#d2e4ff",
+                        "background": "#f8f9ff",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-error-container": "#93000a",
+                        "inverse-primary": "#b0c8eb",
+                        "on-primary-fixed": "#001c37",
+                        "secondary-fixed": "#ffdbcc",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#0a2540",
+                        "secondary-container": "#fe6b00",
+                        "on-surface": "#0b1c30",
+                        "on-tertiary-fixed-variant": "#314865",
+                        "surface-container-highest": "#d3e4fe",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#d3e4fe",
+                        "secondary-fixed-dim": "#ffb693",
+                        "surface-tint": "#49607e",
+                        "primary-fixed": "#d2e4ff",
+                        "surface-ice": "#f8f9ff",
+                        "surface": "#f8f9ff",
+                        "surface-tint-blue": "#d3e4fe",
+                        "outline": "#74777e",
+                        "primary-fixed-dim": "#b0c8eb",
+                        "on-surface-navy": "#0b1c30",
+                        "on-primary-container": "#768dad",
+                        "surface-bright": "#f8f9ff",
+                        "on-tertiary-container": "#768dad",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#314865",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#351000",
+                        "primary": "#000f22",
+                        "surface-container-high": "#dce9ff",
+                        "on-surface-variant": "#43474d",
+                        "on-primary": "#ffffff",
+                        "on-background": "#0b1c30",
+                        "on-tertiary-fixed": "#011c37",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#213145",
+                        "tertiary": "#000f22",
+                        "surface-container": "#e5eeff",
+                        "surface-dim": "#cbdbf5",
+                        "on-secondary-container": "#572000"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "margin-desktop": "64px",
+                        "max-width": "1440px",
+                        "gutter": "24px",
+                        "section-gap": "128px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Inter", "sans-serif"],
+                        "body-md": ["Inter", "sans-serif"],
+                        "body-lg": ["Inter", "sans-serif"],
+                        "label-md": ["JetBrains Mono", "monospace"],
+                        "headline-xl-mobile": ["Inter", "sans-serif"],
+                        "headline-md": ["Inter", "sans-serif"],
+                        "body-sm": ["Inter", "sans-serif"],
+                        "label-sm": ["JetBrains Mono", "monospace"],
+                        "headline-xl": ["Inter", "sans-serif"],
+                        "headline-sm": ["Inter", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-xl-mobile": ["36px", { "lineHeight": "44px", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<meta content="FORDIA Industrial Solutions offers premium calibrated underpacking paper, polyester film, high-performance offset, flexo, and silk screen inks, printing chemicals, and spare parts." name="description"/><meta content="Cylinder Jacket - FORDIA" property="og:title"/><meta content="FORDIA Industrial Solutions offers premium calibrated underpacking paper, polyester film, high-performance offset, flexo, and silk screen inks, printing chemicals, and spare parts." property="og:description"/><meta content="website" property="og:type"/><meta content="https://yourusername.github.io/fordia-website/cylinder_jacket_fordia.html" property="og:url"/><meta content="FORDIA Industrial Solutions" property="og:site_name"/></head>
+<body class="bg-background text-on-background antialiased font-sans pt-[72px]">
+<!-- TopNavBar Component -->
+<header class="fixed top-0 left-0 w-full z-50 flex flex-col shadow-sm">
+<!-- Top Bar -->
+<div class="w-full bg-[#0a2540] text-white py-1.5 px-margin-desktop flex justify-between items-center text-xs font-label-md">
+<div class="flex items-center gap-6">
+<a class="flex items-center gap-1.5 hover:text-secondary-fixed-dim transition-colors" href="mailto:paul.qiu@fordiagroup.com">
+<span class="material-symbols-outlined text-[14px]">mail</span> paul.qiu@fordiagroup.com
+            </a>
+<a class="flex items-center gap-1.5 hover:text-secondary-fixed-dim transition-colors" href="tel:+8617612334939">
+<span class="material-symbols-outlined text-[14px]">call</span> +86 17612334939
+            </a>
+</div>
+<div class="flex items-center gap-6">
+<!-- Language Dropdown -->
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">language</span>
+<select class="bg-transparent border-none text-white text-xs py-0 pl-1 pr-4 focus:ring-0 cursor-pointer">
+<option class="text-primary" value="en">English</option>
+<option class="text-primary" value="zh">Chinese</option>
+</select>
+</div>
+<!-- Search -->
+<div class="relative flex items-center">
+<input class="bg-white/10 border border-white/20 rounded text-xs px-2 py-1 text-white placeholder-white/60 focus:outline-none focus:border-white/40 w-32" placeholder="Search..." type="text"/>
+<span class="material-symbols-outlined text-[14px] absolute right-2 text-white/60 pointer-events-none">search</span>
+</div>
+<!-- Social Icons -->
+<div class="flex items-center gap-3">
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#"><svg class="lucide lucide-facebook" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#"><svg class="lucide lucide-message-circle" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path></svg></a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#"><svg class="lucide lucide-linkedin" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect height="12" width="4" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#"><svg class="lucide lucide-youtube" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg></a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#"><svg class="lucide lucide-music" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg></a>
+<a class="hover:text-secondary-fixed-dim transition-colors" href="#"><svg class="lucide lucide-instagram" fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+</div>
+</div>
+</div>
+<!-- Main NavBar -->
+<div class="w-full h-20 bg-surface border-b border-outline-variant flex items-center justify-between px-margin-desktop">
+<a class="text-headline-md font-headline-md font-bold text-[#0a2540] tracking-tight" href="index.html">FORDIA</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-label-md text-label-md text-[#0a2540] hover:text-secondary-container transition-colors duration-200 uppercase tracking-wide" href="index.html">HOME</a>
+<div class="group relative">
+<a class="font-label-md text-label-md text-[#0a2540] hover:text-secondary-container transition-colors duration-200 uppercase tracking-wide flex items-center gap-1 cursor-pointer" href="products_landing_fordia_with_navigation.html">
+    PRODUCTS
+    <span class="material-symbols-outlined text-[16px]">keyboard_arrow_down</span>
+</a>
+<!-- Mega Menu -->
+<div class="invisible group-hover:visible opacity-0 group-hover:opacity-100 absolute top-full left-1/2 -translate-x-1/2 w-[800px] bg-white border border-outline-variant shadow-xl transition-all duration-300 z-[60] pt-4"><div class="grid grid-cols-2 gap-x-8 gap-y-2 p-8"><div class="space-y-4"><h4 class="font-label-md text-secondary text-xs uppercase tracking-widest border-b border-outline-variant pb-2">Industrial Inks</h4><ul class="space-y-2"><li class=""><a class="font-body-sm text-on-surface hover:text-secondary-container transition-colors block" href="conventional_offset_ink_fordia_updated_header.html">Offset Ink</a></li><li class=""><a class="font-body-sm text-on-surface hover:text-secondary-container transition-colors block" href="flexo_ink_fordia_updated_header.html">Flexo Ink</a></li><li class=""><a class="font-body-sm text-on-surface hover:text-secondary-container transition-colors block" href="silk_screen_ink_fordia_updated_header.html">Silk Screen Ink</a></li><li class=""><a class="font-body-sm text-on-surface hover:text-secondary-container transition-colors block" href="varnish_ink_fordia_updated_header.html">Varnish Ink</a></li></ul><div class="mt-8 p-4 bg-surface-container-low rounded-lg"><p class="font-label-sm text-[10px] text-on-surface-variant uppercase mb-2">Custom Solutions</p><p class="font-body-sm text-xs mb-4">Need a custom formulation for your specific industry application?</p><a class="text-secondary-container font-label-md text-[10px] uppercase tracking-wider flex items-center gap-1 hover:underline" href="contact_us_fordia_updated_header.html">Contact R&amp;D Support <span class="material-symbols-outlined text-[12px]">arrow_forward</span></a></div></div><div class="space-y-4"><h4 class="font-label-md text-secondary text-xs uppercase tracking-widest border-b border-outline-variant pb-2">Materials &amp; Support</h4><ul class="space-y-2"><li class=""><a class="font-body-sm text-on-surface hover:text-secondary-container transition-colors block" href="fordia_underpacking_paper_detail.html">FORDIA Underpacking Paper</a></li><li class=""><a class="font-body-sm text-on-surface hover:text-secondary-container transition-colors block" href="fordia_underpacking_film_detail.html">FORDIA Underpacking Film</a></li><li class=""><a class="font-body-sm text-on-surface hover:text-secondary-container transition-colors block" href="#">FORDIA Anti-marking Paper / Film</a></li><li class=""><a class="font-body-sm text-on-surface hover:text-secondary-container transition-colors block" href="printing_materials_fordia_updated_plastic_ink_knife_image.html">Printing Materials</a></li><li class=""><a class="font-body-sm text-on-surface hover:text-secondary-container transition-colors block" href="printing_chemicals_fordia_3_column_grid.html">Printing Chemical</a></li><li class=""><a class="font-body-sm text-on-surface hover:text-secondary-container transition-colors block" href="printing_spare_parts_fordia.html">Printing Spare Parts</a></li></ul></div></div><div class="bg-primary-container p-4 text-center"><a class="text-on-primary font-label-md text-xs uppercase tracking-widest hover:text-secondary-fixed-dim transition-colors" href="products_landing_fordia_with_navigation.html">View All Products &amp; Technical Sheets</a></div></div>
+</div>
+<a class="font-label-md text-label-md text-[#0a2540] hover:text-secondary-container transition-colors duration-200 uppercase tracking-wide" href="news_media_fordia_updated_header.html">NEWS</a>
+<a class="font-label-md text-label-md text-[#0a2540] hover:text-secondary-container transition-colors duration-200 uppercase tracking-wide" href="case_studies_applications_fordia_updated_header.html">CASE</a>
+<a class="font-label-md text-label-md text-[#0a2540] hover:text-secondary-container transition-colors duration-200 uppercase tracking-wide" href="about_us_fordia_updated_factory_images.html">ABOUT US</a>
+<a class="font-label-md text-label-md text-[#0a2540] hover:text-secondary-container transition-colors duration-200 uppercase tracking-wide" href="contact_us_fordia_updated_header.html">CONTACT US</a>
+</nav>
+</div>
+</header>
+<!-- Hero Banner -->
+<section class="relative w-full h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-primary">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<img alt="Offset cylinder machinery background" class="w-full h-full object-cover object-center opacity-40" data-alt="A highly detailed, cinematic photograph of precision offset printing machinery components in a modern industrial setting. The focus is on massive metallic cylinders gleaming under cool, structured lighting. The scene employs a deep corporate navy foundation with vibrant, energetic orange accents on mechanical parts. The overall mood conveys industrial strength, global reliability, and meticulous precision engineering." src="./assets/images/img_9d1f969d9d2831b060f5b1eb7f641260.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/50"></div>
+</div>
+<!-- Hero Content -->
+<div class="relative z-10 w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop text-on-primary flex flex-col justify-center">
+<div class="max-w-3xl">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 mb-6 text-on-primary-container font-label-md text-label-md">
+<a class="hover:text-secondary-fixed transition-colors" href="products_landing_fordia_with_navigation.html">Products</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<a class="hover:text-secondary-fixed transition-colors" href="#">Printing Press Components</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<span class="text-secondary-container">Cylinder Jacket</span>
+</nav>
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl mb-6">Cylinder Jacket</h1>
+<p class="font-body-lg text-body-lg text-inverse-on-surface mb-8 max-w-2xl">
+                    Engineered for precision fit and superior surface protection. Ensure uniform pressure distribution across your offset press for flawless, high-speed print runs.
+                </p>
+<div class="flex gap-4">
+<a class="inline-flex items-center justify-center px-8 py-4 bg-secondary-container text-on-secondary font-label-md text-label-md uppercase rounded transition-all hover:bg-secondary hover:shadow-[0px_4px_20px_rgba(254,107,0,0.3)]" href="contact_us_fordia_updated_header.html">
+                        Request Quote
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Overview (Asymmetrical Bento-style) -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-section-gap" id="details">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left: Main Image Canvas -->
+<div class="lg:col-span-7 relative group rounded-xl overflow-hidden border border-outline-variant bg-surface-container-low h-[500px]">
+<img alt="Protective Cylinder Jackets" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A clean, studio-lit product shot of protective metallic cylinder jackets arranged structurally against a stark white and subtle grey background. The surface of the jackets shows a finely machined texture. The lighting highlights the meticulous manufacturing quality, utilizing deep navy shadows and a hint of a tech-glow reflection. The image perfectly embodies corporate modernity and precision engineering." src="./assets/images/img_2882c524528f9850c0c799fa762c447d.jpg"/>
+<!-- Subtle Gradient Overlay for depth -->
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-60"></div>
+<!-- Floating Spec Badge -->
+<div class="absolute bottom-6 left-6 right-6 bg-surface-container-lowest/90 backdrop-blur-md border border-outline-variant p-6 rounded-lg shadow-lg">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mb-1">Core Material</p>
+<p class="font-headline-sm text-headline-sm text-on-surface">Advanced Polymer Alloy</p>
+</div>
+<span class="material-symbols-outlined text-secondary-container text-4xl" data-weight="fill">layers</span>
+</div>
+</div>
+</div>
+<!-- Right: Technical Description -->
+<div class="lg:col-span-5 flex flex-col justify-center space-y-8 pl-0 lg:pl-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Mastering Uniform Pressure</h2>
+<div class="h-1 w-16 bg-secondary-container mb-6"></div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                        The integrity of your print depends on absolute consistency. Our Cylinder Jackets are engineered to provide an impermeable, micro-textured barrier that guarantees perfectly uniform pressure distribution across the entire cylinder surface.
+                    </p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant">
+<span class="material-symbols-outlined text-primary-container">compress</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Pressure Equalization</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mitigates localized stress points, preventing dot gain variations and ensuring color fidelity across high-volume runs.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="flex-shrink-0 w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center border border-outline-variant">
+<span class="material-symbols-outlined text-primary-container">verified</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Impact Resistance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Absorbs shock from varied stock thicknesses, significantly extending the lifespan of both the jacket and the underlying cylinder.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Advantages (Glassmorphism Grid) -->
+<section class="w-full bg-surface-container-low py-section-gap border-y border-outline-variant">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Technical Advantages</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Built for the rigorous demands of continuous offset printing operations.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Advantage 1 -->
+<div class="group bg-surface-container-lowest rounded-xl p-8 border border-outline-variant transition-all duration-300 hover:shadow-[0px_4px_20px_rgba(10,37,64,0.08)] hover:-translate-y-1 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary-container scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
+<span class="material-symbols-outlined text-4xl text-secondary-container mb-6 block" data-weight="fill">precision_manufacturing</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Precision Fit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Manufactured to micron-level tolerances, ensuring a seamless interface with the cylinder body to eliminate slippage and registration errors.</p>
+</div>
+<!-- Advantage 2 -->
+<div class="group bg-surface-container-lowest rounded-xl p-8 border border-outline-variant transition-all duration-300 hover:shadow-[0px_4px_20px_rgba(10,37,64,0.08)] hover:-translate-y-1 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary-container scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
+<span class="material-symbols-outlined text-4xl text-secondary-container mb-6 block" data-weight="fill">shield</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Surface Protection</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Advanced chemical coatings resist aggressive inks and solvents, protecting the core cylinder from corrosion and abrasive wear.</p>
+</div>
+<!-- Advantage 3 -->
+<div class="group bg-surface-container-lowest rounded-xl p-8 border border-outline-variant transition-all duration-300 hover:shadow-[0px_4px_20px_rgba(10,37,64,0.08)] hover:-translate-y-1 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1 bg-secondary-container scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
+<span class="material-symbols-outlined text-4xl text-secondary-container mb-6 block" data-weight="fill">update</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">Rapid Changeover</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Engineered locking mechanisms allow for swift installation and removal, minimizing downtime during critical maintenance windows.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Applications Banner -->
+<section class="w-full py-section-gap">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="relative rounded-2xl overflow-hidden bg-primary h-[400px] flex items-center border border-outline-variant">
+<div class="absolute inset-0">
+<img alt="Offset Printing Press in operation" class="w-full h-full object-cover opacity-30" data-alt="A wide-angle, dynamic shot of a massive offset printing press in full operation within a pristine manufacturing hall. The scene is dominated by structured geometry and deep navy tones, contrasted by the intense white light illuminating the paper path. Subtle orange tech-glows emit from digital control panels. The image communicates high-speed precision, industrial scale, and unwavering reliability." src="./assets/images/img_86065b821aa5bdabc933a797724ece1e.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 p-8 md:p-16 max-w-2xl">
+<h2 class="font-headline-lg text-headline-lg text-on-primary mb-4">Optimized for High-Speed Offset Presses</h2>
+<p class="font-body-md text-body-md text-inverse-on-surface mb-8">
+                        Our cylinder jackets are the industry standard for commercial web and sheetfed offset environments. They are specifically formulated to interface seamlessly with modern blanket cylinders, ensuring maximum ink transfer efficiency at extreme operational speeds.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<span class="px-4 py-2 bg-surface-container/20 border border-outline-variant text-on-primary font-label-sm text-label-sm rounded uppercase tracking-wider backdrop-blur-sm">Sheetfed Offset</span>
+<span class="px-4 py-2 bg-surface-container/20 border border-outline-variant text-on-primary font-label-sm text-label-sm rounded uppercase tracking-wider backdrop-blur-sm">Web Offset</span>
+<span class="px-4 py-2 bg-surface-container/20 border border-outline-variant text-on-primary font-label-sm text-label-sm rounded uppercase tracking-wider backdrop-blur-sm">Packaging Print</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Inquiry Form -->
+<section class="w-full py-section-gap bg-surface" id="inquiry">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="max-w-3xl mx-auto bg-surface-container-lowest border border-outline-variant rounded-xl p-8 md:p-12 shadow-sm relative overflow-hidden">
+<!-- Subtle accent line -->
+<div class="absolute top-0 left-0 w-full h-2 bg-primary"></div>
+<div class="text-center mb-10">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Technical Inquiry</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Provide your press specifications below, and our engineering team will calculate the optimal jacket configuration.</p>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="firstName">First Name</label>
+<input class="w-full bg-surface-bright border border-outline-variant rounded px-4 py-3 text-on-surface focus:ring-2 focus:ring-secondary-container focus:border-transparent transition-all outline-none font-body-sm" id="firstName" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="lastName">Last Name</label>
+<input class="w-full bg-surface-bright border border-outline-variant rounded px-4 py-3 text-on-surface focus:ring-2 focus:ring-secondary-container focus:border-transparent transition-all outline-none font-body-sm" id="lastName" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="email">Business Email</label>
+<input class="w-full bg-surface-bright border border-outline-variant rounded px-4 py-3 text-on-surface focus:ring-2 focus:ring-secondary-container focus:border-transparent transition-all outline-none font-body-sm" id="email" type="email"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="company">Company Name</label>
+<input class="w-full bg-surface-bright border border-outline-variant rounded px-4 py-3 text-on-surface focus:ring-2 focus:ring-secondary-container focus:border-transparent transition-all outline-none font-body-sm" id="company" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="pressModel">Press Make &amp; Model</label>
+<input class="w-full bg-surface-bright border border-outline-variant rounded px-4 py-3 text-on-surface focus:ring-2 focus:ring-secondary-container focus:border-transparent transition-all outline-none font-body-sm" id="pressModel" placeholder="e.g., Heidelberg Speedmaster" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="cylinderType">Cylinder Application</label>
+<select class="w-full bg-surface-bright border border-outline-variant rounded px-4 py-3 text-on-surface focus:ring-2 focus:ring-secondary-container focus:border-transparent transition-all outline-none font-body-sm" id="cylinderType">
+<option>Impression Cylinder</option>
+<option>Transfer Cylinder</option>
+<option>Delivery Cylinder</option>
+<option>Other</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-2" for="requirements">Specific Requirements</label>
+<textarea class="w-full bg-surface-bright border border-outline-variant rounded px-4 py-3 text-on-surface focus:ring-2 focus:ring-secondary-container focus:border-transparent transition-all outline-none font-body-sm resize-none" id="requirements" rows="4"></textarea>
+</div>
+<div class="pt-4 text-center">
+<button class="inline-flex items-center justify-center px-10 py-4 bg-secondary-container text-on-secondary font-label-md text-label-md uppercase rounded transition-all hover:bg-secondary hover:shadow-[0px_4px_20px_rgba(254,107,0,0.3)] w-full md:w-auto" type="submit">
+                            Request Quote
+                            <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer Component -->
+<footer class="w-full bg-primary dark:bg-primary border-t border-primary-container transition-opacity duration-200">
+<div class="w-full max-w-[1440px] mx-auto px-margin-desktop py-section-gap grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<!-- Brand Column -->
+<div class="flex flex-col gap-4">
+<span class="font-headline-sm text-headline-sm text-on-primary font-bold tracking-tight uppercase">FORDIA</span>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-4">
+                    Precision engineering for global reliability. Advancing industrial print technology through superior material science.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div class="flex flex-col gap-4">
+<a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" href="products_landing_fordia_with_navigation.html">Product Categories</a>
+<a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" href="#">Technical Support</a>
+</div>
+<!-- Links Column 2 -->
+<div class="flex flex-col gap-4">
+<a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" href="case_studies_applications_fordia_updated_header.html">Case Studies</a>
+<a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+<!-- Links Column 3 -->
+<div class="flex flex-col gap-4">
+<a class="font-body-sm text-body-sm text-on-primary-container hover:text-on-primary transition-colors" href="contact_us_fordia_updated_header.html">Contact Us</a>
+</div>
+</div>
+<!-- Copyright Bottom Bar -->
+<div class="w-full border-t border-primary-container py-6">
+<div class="w-full max-w-[1440px] mx-auto px-margin-desktop text-center md:text-left">
+<p class="font-body-sm text-body-sm text-on-primary-container">
+                    © 2024 FORDIA New Materials Technology Co., Ltd. All Rights Reserved.
+                </p>
+</div>
+</div>
+</footer>
+<script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // 1. Intercept all form submissions (e.g. Inquiries, Contact Forms, Quotes)
+                const forms = document.querySelectorAll('form');
+                forms.forEach(form => {
+                    form.addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        
+                        // Basic validation
+                        const emailInput = form.querySelector('input[type="email"]');
+                        if (emailInput && !emailInput.value.includes('@')) {
+                            showToast('请输入有效的邮箱地址！', 'error');
+                            return;
+                        }
+                        
+                        // Show premium success toast
+                        showToast('询盘提交成功！感谢您的垂询，我们的团队会尽快与您联系。', 'success');
+                        
+                        // Reset form
+                        form.reset();
+                    });
+                });
+
+                // 2. Enhance generic buttons/links with smooth interactions
+                const buttons = document.querySelectorAll('button:not([type="submit"]), a[href="#"]');
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const text = btn.innerText.trim().toLowerCase();
+                        if (text === 'request quote' || text === 'contact us') {
+                            const contactSection = document.querySelector('form');
+                            if (contactSection) {
+                                e.preventDefault();
+                                contactSection.scrollIntoView({ behavior: 'smooth' });
+                            } else {
+                                window.location.href = 'contact_us_fordia_updated_header.html';
+                            }
+                        } else if (btn.tagName === 'A' && btn.getAttribute('href') === '#') {
+                            e.preventDefault();
+                            showToast('该功能正在开发中！请访问产品页面查看详情。', 'info');
+                        }
+                    });
+                });
+
+                // 3. Mobile Menu toggle handler
+                const menuBtn = document.querySelector('header button.lg\\:hidden, header button.md\\:hidden');
+                if (menuBtn) {
+                    menuBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        const nav = document.querySelector('header nav');
+                        if (nav) {
+                            if (nav.classList.contains('hidden')) {
+                                nav.classList.remove('hidden');
+                                nav.classList.add('flex', 'flex-col', 'absolute', 'top-20', 'left-0', 'w-full', 'bg-surface', 'border-b', 'border-outline-variant', 'p-6', 'gap-4', 'shadow-lg');
+                            } else {
+                                nav.classList.add('hidden');
+                                nav.classList.remove('flex', 'flex-col', 'absolute', 'top-20', 'left-0', 'w-full', 'bg-surface', 'border-b', 'border-outline-variant', 'p-6', 'gap-4', 'shadow-lg');
+                            }
+                        }
+                    });
+                }
+
+                // 4. Create and inject Toast notification CSS & Container
+                function showToast(message, type = 'success') {
+                    let container = document.getElementById('toast-container');
+                    if (!container) {
+                        container = document.createElement('div');
+                        container.id = 'toast-container';
+                        container.className = 'fixed bottom-5 right-5 z-[9999] flex flex-col gap-3 max-w-sm w-full px-4 md:px-0';
+                        document.body.appendChild(container);
+                        
+                        if (!document.getElementById('toast-styles')) {
+                            const style = document.createElement('style');
+                            style.id = 'toast-styles';
+                            style.textContent = `
+                                @keyframes slideIn {
+                                    from { transform: translateX(100%); opacity: 0; }
+                                    to { transform: translateX(0); opacity: 1; }
+                                }
+                                @keyframes fadeOut {
+                                    to { transform: translateY(-10px); opacity: 0; }
+                                }
+                                .toast-card {
+                                    animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+                                    backdrop-filter: blur(12px);
+                                    -webkit-backdrop-filter: blur(12px);
+                                }
+                            `;
+                            document.head.appendChild(style);
+                        }
+                    }
+
+                    const toast = document.createElement('div');
+                    let bgColor = 'bg-slate-900/95 text-white border-slate-700/50';
+                    let icon = 'info';
+                    
+                    if (type === 'success') {
+                        bgColor = 'bg-emerald-900/95 text-emerald-50 border-emerald-500/30';
+                        icon = 'check_circle';
+                    } else if (type === 'error') {
+                        bgColor = 'bg-rose-900/95 text-rose-50 border-rose-500/30';
+                        icon = 'error';
+                    }
+                    
+                    toast.className = `toast-card flex items-start gap-3 p-4 rounded-xl border shadow-lg ${bgColor}`;
+                    toast.innerHTML = `
+                        <span class="material-symbols-outlined text-[20px] shrink-0">${icon}</span>
+                        <div class="flex-grow text-sm font-medium leading-5">${message}</div>
+                        <button class="text-white/40 hover:text-white transition-colors ml-auto shrink-0" onclick="this.parentElement.remove()">
+                            <span class="material-symbols-outlined text-[16px]">close</span>
+                        </button>
+                    `;
+                    
+                    container.appendChild(toast);
+                    
+                    setTimeout(() => {
+                        toast.style.animation = 'fadeOut 0.4s ease forwards';
+                        setTimeout(() => toast.remove(), 400);
+                    }, 4000);
+                }
+            });
+            </script></body></html>

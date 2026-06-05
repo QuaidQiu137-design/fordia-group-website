@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LED UV Curing Offset Ink - FORDIA</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config injected from instructions -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#49607e",
+                        "on-tertiary-fixed": "#001a41",
+                        "background": "#f8f9ff",
+                        "surface-container-high": "#dce9ff",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#001c37",
+                        "on-primary-container": "#768dad",
+                        "on-primary-fixed-variant": "#314865",
+                        "inverse-on-surface": "#eaf1ff",
+                        "tertiary-container": "#002251",
+                        "secondary-fixed": "#ffdbcc",
+                        "on-secondary-fixed-variant": "#7a3000",
+                        "primary-container": "#0a2540",
+                        "surface": "#f8f9ff",
+                        "on-secondary-container": "#572000",
+                        "surface-variant": "#d3e4fe",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "outline": "#74777e",
+                        "surface-container-highest": "#d3e4fe",
+                        "primary-fixed": "#d2e4ff",
+                        "tertiary": "#000d28",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#b0c8eb",
+                        "outline-variant": "#c4c6ce",
+                        "secondary-fixed-dim": "#ffb693",
+                        "on-surface-variant": "#43474d",
+                        "inverse-primary": "#b0c8eb",
+                        "on-tertiary-container": "#3c88ff",
+                        "on-background": "#0b1c30",
+                        "on-surface": "#0b1c30",
+                        "on-secondary-fixed": "#351000",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#cbdbf5",
+                        "secondary": "#a04100",
+                        "error": "#ba1a1a",
+                        "surface-container": "#e5eeff",
+                        "secondary-container": "#fe6b00",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#213145",
+                        "surface-bright": "#f8f9ff",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-fixed-variant": "#004493",
+                        "tertiary-fixed": "#d8e2ff",
+                        "primary": "#000f22",
+                        "tertiary-fixed-dim": "#adc6ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "max-width": "1440px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["JetBrains Mono"],
+                        "body-lg": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-xl-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "label-md": ["JetBrains Mono"],
+                        "body-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-xl-mobile": ["36px", { "lineHeight": "44px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        /* Technical Glow for hover states */
+        .tech-glow:hover {
+            box-shadow: 0px 4px 20px rgba(10, 37, 64, 0.08);
+        }
+    </style>
+<meta content="LED UV Curing Offset Ink - FORDIA - High-performance sheet-fed and web offset printing inks by FORDIA. Engineered for exceptional color saturation, rapid drying, and rub resistance." name="description"/><meta content="LED UV Curing Offset Ink - FORDIA" property="og:title"/><meta content="LED UV Curing Offset Ink - FORDIA - High-performance sheet-fed and web offset printing inks by FORDIA. Engineered for exceptional color saturation, rapid drying, and rub resistance." property="og:description"/><meta content="website" property="og:type"/><meta content="https://yourusername.github.io/fordia-website/led_uv_curing_offset_ink_for_tinplate_fordia_updated_header.html" property="og:url"/><meta content="FORDIA Industrial Solutions" property="og:site_name"/></head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased overflow-x-hidden pt-20">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50">
+<!-- Top Utility Bar -->
+<div class="bg-primary text-on-primary py-2 px-margin-mobile md:px-margin-desktop flex justify-between items-center">
+<div class="flex items-center gap-6">
+<a class="flex items-center gap-2 font-label-sm text-label-sm hover:text-secondary-fixed transition-colors" href="mailto:paul.qiu@fordiagroup.com">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+                paul.qiu@fordiagroup.com
+            </a>
+<a class="flex items-center gap-2 font-label-sm text-label-sm hover:text-secondary-fixed transition-colors" href="tel:+8617612334939">
+<span class="material-symbols-outlined text-[16px]">call</span>
+                +86 17612334939
+            </a>
+</div>
+<div class="flex items-center gap-6">
+<button class="flex items-center gap-2 font-label-sm text-label-sm hover:text-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[16px]">language</span>
+                English
+                <span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+<button class="hover:text-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+</div>
+</div>
+<!-- Primary Navigation Bar -->
+<nav class="bg-surface/95 backdrop-blur-md border-b border-outline-variant px-margin-mobile md:px-margin-desktop h-20 flex items-center justify-between">
+<a class="text-headline-md font-bold text-primary tracking-tight" href="index.html">FORDIA</a>
+<div class="hidden lg:flex items-center gap-8">
+<a class="font-label-md text-label-md text-on-surface hover:text-secondary-container transition-colors" href="index.html">HOME</a>
+<div class="group relative">
+<a class="font-label-md text-label-md text-secondary-container font-bold flex items-center gap-1" href="products_landing_fordia_with_navigation.html">
+                    PRODUCTS
+                    <span class="material-symbols-outlined text-[18px]">expand_more</span>
+</a>
+<!-- Mega Menu Placeholder -->
+<div class="absolute top-full left-1/2 -translate-x-1/2 mt-0 w-[600px] bg-surface border border-outline-variant shadow-xl rounded-b-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 p-8 grid grid-cols-3 gap-8">
+<div>
+<h4 class="font-label-md font-bold text-primary mb-4">Industrial Coatings</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-body-sm text-on-surface-variant hover:text-secondary-container" href="products_landing_fordia_with_navigation.html">UV Curing Inks</a></li>
+<li class=""><a class="text-body-sm text-on-surface-variant hover:text-secondary-container" href="#">Metal Finishes</a></li>
+<li class=""><a class="text-body-sm text-on-surface-variant hover:text-secondary-container" href="#">Protective Coatings</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md font-bold text-primary mb-4">Materials</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-body-sm text-on-surface-variant hover:text-secondary-container" href="#">Specialty Resins</a></li>
+<li class=""><a class="text-body-sm text-on-surface-variant hover:text-secondary-container" href="#">Advanced Polymers</a></li>
+<li class=""><a class="text-body-sm text-on-surface-variant hover:text-secondary-container" href="#">Pigment Concentrates</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md font-bold text-primary mb-4">Applications</h4>
+<ul class="space-y-2">
+<li class=""><a class="text-body-sm text-on-surface-variant hover:text-secondary-container" href="#">Food Packaging</a></li>
+<li class=""><a class="text-body-sm text-on-surface-variant hover:text-secondary-container" href="#">Automotive</a></li>
+<li class=""><a class="text-body-sm text-on-surface-variant hover:text-secondary-container" href="#">Construction</a></li>
+</ul>
+</div>
+</div>
+</div>
+<a class="font-label-md text-label-md text-on-surface hover:text-secondary-container transition-colors" href="news_media_fordia_updated_header.html">NEWS</a>
+<a class="font-label-md text-label-md text-on-surface hover:text-secondary-container transition-colors" href="case_studies_applications_fordia_updated_header.html">CASE</a>
+<a class="font-label-md text-label-md text-on-surface hover:text-secondary-container transition-colors" href="about_us_fordia_updated_factory_images.html">ABOUT US</a>
+<a class="font-label-md text-label-md text-on-surface hover:text-secondary-container transition-colors" href="contact_us_fordia_updated_header.html">CONTACT US</a>
+</div>
+<button class="lg:hidden material-symbols-outlined text-primary">menu</button>
+</nav>
+</header>
+<!-- SideNavBar -->
+<aside class="hidden xl:flex fixed right-0 top-1/2 -translate-y-1/2 flex-col gap-4 p-2 z-40 bg-surface-container-high dark:bg-primary-container border-l border-y border-outline-variant dark:border-outline rounded-l-xl shadow-sm dark:shadow-none w-16 group hover:w-48 transition-all duration-300 overflow-hidden">
+<div class="flex flex-col gap-2 w-full">
+<a class="flex items-center gap-4 p-2 w-[180px] text-on-surface-variant hover:text-primary hover:bg-surface-container-highest dark:hover:bg-on-primary-fixed-variant rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px] flex-shrink-0">request_quote</span>
+<span class="font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 delay-100">Request Quote</span>
+</a>
+<a class="flex items-center gap-4 p-2 w-[180px] text-on-surface-variant hover:text-primary hover:bg-surface-container-highest dark:hover:bg-on-primary-fixed-variant rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px] flex-shrink-0">support_agent</span>
+<span class="font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 delay-100">Tech Support</span>
+</a>
+<a class="flex items-center gap-4 p-2 w-[180px] text-on-surface-variant hover:text-primary hover:bg-surface-container-highest dark:hover:bg-on-primary-fixed-variant rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px] flex-shrink-0">architecture</span>
+<span class="font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 delay-100">CAD Files</span>
+</a>
+<a class="flex items-center gap-4 p-2 w-[180px] text-on-surface-variant hover:text-primary hover:bg-surface-container-highest dark:hover:bg-on-primary-fixed-variant rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined text-[24px] flex-shrink-0">description</span>
+<span class="font-label-sm text-label-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-200 delay-100">SDS Sheets</span>
+</a>
+</div>
+</aside>
+<main class="max-w-[1440px] mx-auto w-full xl:pr-16"><nav aria-label="Breadcrumb" class="bg-surface-container-low py-4 px-margin-mobile md:px-margin-desktop border-b border-outline-variant"><ol class="flex items-center gap-2 max-w-max-width mx-auto"><li class="flex items-center"><a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary-container transition-colors uppercase" href="index.html">Home</a><span class="material-symbols-outlined text-outline text-sm ml-2">chevron_right</span></li><li class="flex items-center"><a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary-container transition-colors uppercase" href="products_landing_fordia_with_navigation.html">Products</a><span class="material-symbols-outlined text-outline text-sm ml-2">chevron_right</span></li><li class="flex items-center"><a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary-container transition-colors uppercase" href="conventional_offset_ink_fordia_updated_header.html">Offset Ink</a><span class="material-symbols-outlined text-outline text-sm ml-2">chevron_right</span></li><li class="flex items-center"><a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary-container transition-colors uppercase" href="offset_ink_fordia_updated_header.html">UV / LED Offset Ink</a><span class="material-symbols-outlined text-outline text-sm ml-2">chevron_right</span></li><li class="flex items-center"><a class="font-label-md text-label-md text-secondary-container font-bold uppercase" href="offset_ink_fordia_updated_header.html">LED UV Curing Offset Ink for Tinplate</a></li></ol></nav> <!-- Padding for side nav -->
+<!-- Hero Section -->
+<section class="w-full bg-surface-container-lowest border-b border-outline-variant pt-12 pb-20 px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 bg-surface-dim px-3 py-1 rounded-DEFAULT w-max border border-outline-variant/50">
+<span class="material-symbols-outlined text-sm text-primary-container">science</span>
+<span class="font-label-sm text-label-sm text-primary-container">Industrial Coatings Division</span>
+</div>
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-primary">LED UV Curing Offset Ink for Tinplate Label</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                        Advanced LED-curable ink specifically engineered for the high-volume metal packaging industry. Delivers exceptional adhesion and vibrant color reproduction while drastically reducing energy consumption through low-heat, high-speed curing technology.
+                    </p>
+<div class="flex flex-wrap items-center gap-4 mt-4">
+</div>
+</div>
+<div class="lg:col-span-6 mt-12 lg:mt-0 relative rounded-xl overflow-hidden shadow-sm aspect-video lg:aspect-[4/3] bg-surface-container-low">
+<img alt="High precision tinplate cans in a factory" class="w-full h-full object-cover" data-alt="A pristine, brightly lit industrial setting showing newly manufactured metallic tinplate cans moving along a precision conveyor belt. The lighting is high-key and cool, highlighting the reflective surfaces of the metal containers. The environment is sterile, modern, and highly technical, dominated by cool silvers, clean whites, and subtle industrial blue tones, fitting a premium B2B manufacturing context." src="./assets/images/img_3c58a19464d680d1b227d71eb9eb7f30.jpg"/>
+</div>
+</div>
+</section>
+<!-- Main Content Area -->
+<section class="py-20 px-margin-mobile md:px-margin-desktop bg-background">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left Column: Product Details -->
+<div class="lg:col-span-8 flex flex-col gap-16">
+<!-- Advantages / Key Specs Bento Grid -->
+<div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8">Engineering Advantages</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 tech-glow transition-all">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center mb-4 text-primary-container">
+<span class="material-symbols-outlined fill-icon text-[28px]">energy_savings_leaf</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Eco-Friendly Efficiency</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Optimized for LED UV systems, requiring significantly less power than traditional mercury lamps. Zero VOC emissions during the curing process.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 tech-glow transition-all">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center mb-4 text-primary-container">
+<span class="material-symbols-outlined fill-icon text-[28px]">layers</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Superior Metal Adhesion</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Formulated with advanced cross-linking polymers to ensure unmatched bond strength on treated tinplate and aluminum substrates.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 tech-glow transition-all">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center mb-4 text-primary-container">
+<span class="material-symbols-outlined fill-icon text-[28px]">speed</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">High-Speed Curing</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Instantly reacts to LED wavelengths, allowing for maximum line speeds without compromising print quality or structural integrity.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-xl p-6 tech-glow transition-all">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center mb-4 text-primary-container">
+<span class="material-symbols-outlined fill-icon text-[28px]">palette</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">High Pigment Load</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Delivers intense, vibrant colors with lower ink film thickness, improving cost-efficiency per unit printed.</p>
+</div>
+</div>
+</div>
+<!-- Applications -->
+<div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8">Primary Applications</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+<div class="relative group rounded-xl overflow-hidden border border-outline-variant">
+<div class="aspect-[4/3] bg-surface-dim">
+<img alt="Food Cans" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A clean, minimalist studio shot of premium metallic food cans neatly arranged on a white surface. The lighting is soft and diffused, emphasizing the smooth, high-quality finish of the metal containers. The aesthetic is strictly corporate and modern, utilizing a cool light-mode palette of silver, white, and subtle shadows to convey industrial precision and hygiene." src="./assets/images/img_dd0b496013c94f5f6e07256075adb473.jpg"/>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-primary/90 to-transparent">
+<h3 class="font-headline-md text-headline-md text-on-primary">Food Cans</h3>
+</div>
+</div>
+<div class="relative group rounded-xl overflow-hidden border border-outline-variant">
+<div class="aspect-[4/3] bg-surface-dim">
+<img alt="Beverage Containers" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A sleek array of unbranded aluminum beverage cans standing upright on a polished steel surface. The environment is highly technical, bathed in crisp, bright white light that creates sharp, defining reflections along the metallic curves. The overall mood is sterile, efficient, and sophisticated, perfectly aligned with high-end manufacturing materials." src="./assets/images/img_2e9efdd5e5c79a51f6b74ae5e99abed6.jpg"/>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-primary/90 to-transparent">
+<h3 class="font-headline-md text-headline-md text-on-primary">Chemical Cans</h3>
+</div>
+</div>
+</div>
+</div>
+<!-- Technical Specifications Table -->
+<div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8">Technical Specifications</h2>
+<div class="overflow-x-auto border border-outline-variant rounded-xl shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-primary-container text-on-primary-container font-label-md text-label-md border-b border-outline-variant">
+<th class="p-4 font-semibold">Property</th>
+<th class="p-4 font-semibold">Value / Standard</th>
+<th class="p-4 font-semibold">Test Method</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface-variant">
+<tr class="border-b border-outline-variant bg-surface-container-lowest">
+<td class="p-4 font-medium text-primary">Viscosity (25°C)</td>
+<td class="p-4 font-label-sm text-label-sm">35,000 - 45,000 cps</td>
+<td class="p-4">Brookfield DV-II</td>
+</tr>
+<tr class="border-b border-outline-variant bg-surface">
+<td class="p-4 font-medium text-primary">Curing Wavelength</td>
+<td class="p-4 font-label-sm text-label-sm">385nm - 395nm</td>
+<td class="p-4">LED Radiometer</td>
+</tr>
+<tr class="border-b border-outline-variant bg-surface-container-lowest">
+<td class="p-4 font-medium text-primary">Adhesion Tape Test</td>
+<td class="p-4 font-label-sm text-label-sm">100/100 (No peeling)</td>
+<td class="p-4">ASTM D3359</td>
+</tr>
+<tr class="bg-surface">
+<td class="p-4 font-medium text-primary">Shelf Life</td>
+<td class="p-4 font-label-sm text-label-sm">12 Months</td>
+<td class="p-4">Standard Storage (15-25°C)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Right Column: Sticky Inquiry Form -->
+<div class="lg:col-span-4 mt-12 lg:mt-0">
+<div class="sticky top-28 bg-surface-container-lowest border border-outline-variant rounded-xl p-8 shadow-sm">
+<div class="mb-6">
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Technical Inquiry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Request pricing, samples, or consult with our material science team.</p>
+</div>
+<form class="flex flex-col gap-5">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="fullName">Full Name *</label>
+<input class="appearance-none border border-outline-variant rounded-DEFAULT w-full py-2.5 px-3 text-on-surface bg-surface-bright focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container font-body-sm text-body-sm transition-colors" id="fullName" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="company">Company Name *</label>
+<input class="appearance-none border border-outline-variant rounded-DEFAULT w-full py-2.5 px-3 text-on-surface bg-surface-bright focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container font-body-sm text-body-sm transition-colors" id="company" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="email">Business Email *</label>
+<input class="appearance-none border border-outline-variant rounded-DEFAULT w-full py-2.5 px-3 text-on-surface bg-surface-bright focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container font-body-sm text-body-sm transition-colors" id="email" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="interest">Primary Interest</label>
+<div class="relative">
+<select class="appearance-none border border-outline-variant rounded-DEFAULT w-full py-2.5 pl-3 pr-10 text-on-surface bg-surface-bright focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container font-body-sm text-body-sm transition-colors" id="interest">
+<option>Request Product Sample</option>
+<option>Volume Pricing Quote</option>
+<option>Technical Consultation</option>
+<option>SDS / Documentation</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-outline pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="message">Project Details</label>
+<textarea class="appearance-none border border-outline-variant rounded-DEFAULT w-full py-2.5 px-3 text-on-surface bg-surface-bright focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container font-body-sm text-body-sm transition-colors resize-none" id="message" rows="4"></textarea>
+</div>
+<button class="mt-2 bg-primary text-on-primary w-full py-3 rounded-DEFAULT font-label-md text-label-md font-bold hover:bg-tertiary-container transition-colors tech-glow flex items-center justify-center gap-2" type="submit">
+                                Submit Inquiry
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<p class="font-label-sm text-label-sm text-outline text-center mt-2">Our technical team typically responds within 24 hours.</p>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-gutter bg-primary dark:bg-tertiary-container border-t border-outline dark:border-primary-fixed text-on-primary dark:text-on-tertiary-container mt-12">
+<div class="md:col-span-1 lg:col-span-2 flex flex-col gap-6">
+<span class="text-headline-sm font-headline-sm font-bold text-on-primary">FORDIA</span>
+<p class="font-body-sm text-body-sm text-surface-variant max-w-sm">
+                Precision Engineering for Global Markets. Developing advanced material science solutions for industrial applications worldwide.
+            </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md font-bold text-secondary-fixed">Products</h4>
+<a class="font-body-sm text-body-sm text-surface-variant dark:text-on-surface-variant hover:text-secondary-fixed-dim underline transition-all" href="products_landing_fordia_with_navigation.html">Printing Inks</a>
+<a class="font-body-sm text-body-sm text-surface-variant dark:text-on-surface-variant hover:text-secondary-fixed-dim underline transition-all" href="varnish_ink_fordia_updated_header.html">Coatings &amp; Varnishes</a>
+<a class="font-body-sm text-body-sm text-surface-variant dark:text-on-surface-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Materials &amp; Chemicals</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md font-bold text-secondary-fixed">Corporate</h4>
+<a class="font-body-sm text-body-sm text-surface-variant dark:text-on-surface-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Equipment &amp; Support</a>
+<a class="font-body-sm text-body-sm text-surface-variant dark:text-on-surface-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Global Logistics</a>
+<a class="font-body-sm text-body-sm text-surface-variant dark:text-on-surface-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Sustainability</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md font-bold text-secondary-fixed">Legal</h4>
+<a class="font-body-sm text-body-sm text-surface-variant dark:text-on-surface-variant hover:text-secondary-fixed-dim underline transition-all" href="#">ISO 9001 Certified</a>
+<a class="font-body-sm text-body-sm text-surface-variant dark:text-on-surface-variant hover:text-secondary-fixed-dim underline transition-all" href="#">Privacy Policy</a>
+</div>
+<div class="col-span-1 md:col-span-4 lg:col-span-5 mt-12 pt-8 border-t border-on-primary/20">
+<p class="font-body-sm text-body-sm text-surface-variant text-center">
+                © 2024 FORDIA Industrial Solutions. All rights reserved. Precision Engineering for Global Markets.
+            </p>
+</div>
+</footer>
+<script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // 1. Intercept all form submissions (e.g. Inquiries, Contact Forms, Quotes)
+                const forms = document.querySelectorAll('form');
+                forms.forEach(form => {
+                    form.addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        
+                        // Basic validation
+                        const emailInput = form.querySelector('input[type="email"]');
+                        if (emailInput && !emailInput.value.includes('@')) {
+                            showToast('请输入有效的邮箱地址！', 'error');
+                            return;
+                        }
+                        
+                        // Show premium success toast
+                        showToast('询盘提交成功！感谢您的垂询，我们的团队会尽快与您联系。', 'success');
+                        
+                        // Reset form
+                        form.reset();
+                    });
+                });
+
+                // 2. Enhance generic buttons/links with smooth interactions
+                const buttons = document.querySelectorAll('button:not([type="submit"]), a[href="#"]');
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const text = btn.innerText.trim().toLowerCase();
+                        if (text === 'request quote' || text === 'contact us') {
+                            const contactSection = document.querySelector('form');
+                            if (contactSection) {
+                                e.preventDefault();
+                                contactSection.scrollIntoView({ behavior: 'smooth' });
+                            } else {
+                                window.location.href = 'contact_us_fordia_updated_header.html';
+                            }
+                        } else if (btn.tagName === 'A' && btn.getAttribute('href') === '#') {
+                            e.preventDefault();
+                            showToast('该功能正在开发中！请访问产品页面查看详情。', 'info');
+                        }
+                    });
+                });
+
+                // 3. Mobile Menu toggle handler
+                const menuBtn = document.querySelector('header button.lg\\:hidden, header button.md\\:hidden');
+                if (menuBtn) {
+                    menuBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        const nav = document.querySelector('header nav');
+                        if (nav) {
+                            if (nav.classList.contains('hidden')) {
+                                nav.classList.remove('hidden');
+                                nav.classList.add('flex', 'flex-col', 'absolute', 'top-20', 'left-0', 'w-full', 'bg-surface', 'border-b', 'border-outline-variant', 'p-6', 'gap-4', 'shadow-lg');
+                            } else {
+                                nav.classList.add('hidden');
+                                nav.classList.remove('flex', 'flex-col', 'absolute', 'top-20', 'left-0', 'w-full', 'bg-surface', 'border-b', 'border-outline-variant', 'p-6', 'gap-4', 'shadow-lg');
+                            }
+                        }
+                    });
+                }
+
+                // 4. Create and inject Toast notification CSS & Container
+                function showToast(message, type = 'success') {
+                    let container = document.getElementById('toast-container');
+                    if (!container) {
+                        container = document.createElement('div');
+                        container.id = 'toast-container';
+                        container.className = 'fixed bottom-5 right-5 z-[9999] flex flex-col gap-3 max-w-sm w-full px-4 md:px-0';
+                        document.body.appendChild(container);
+                        
+                        if (!document.getElementById('toast-styles')) {
+                            const style = document.createElement('style');
+                            style.id = 'toast-styles';
+                            style.textContent = `
+                                @keyframes slideIn {
+                                    from { transform: translateX(100%); opacity: 0; }
+                                    to { transform: translateX(0); opacity: 1; }
+                                }
+                                @keyframes fadeOut {
+                                    to { transform: translateY(-10px); opacity: 0; }
+                                }
+                                .toast-card {
+                                    animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+                                    backdrop-filter: blur(12px);
+                                    -webkit-backdrop-filter: blur(12px);
+                                }
+                            `;
+                            document.head.appendChild(style);
+                        }
+                    }
+
+                    const toast = document.createElement('div');
+                    let bgColor = 'bg-slate-900/95 text-white border-slate-700/50';
+                    let icon = 'info';
+                    
+                    if (type === 'success') {
+                        bgColor = 'bg-emerald-900/95 text-emerald-50 border-emerald-500/30';
+                        icon = 'check_circle';
+                    } else if (type === 'error') {
+                        bgColor = 'bg-rose-900/95 text-rose-50 border-rose-500/30';
+                        icon = 'error';
+                    }
+                    
+                    toast.className = `toast-card flex items-start gap-3 p-4 rounded-xl border shadow-lg ${bgColor}`;
+                    toast.innerHTML = `
+                        <span class="material-symbols-outlined text-[20px] shrink-0">${icon}</span>
+                        <div class="flex-grow text-sm font-medium leading-5">${message}</div>
+                        <button class="text-white/40 hover:text-white transition-colors ml-auto shrink-0" onclick="this.parentElement.remove()">
+                            <span class="material-symbols-outlined text-[16px]">close</span>
+                        </button>
+                    `;
+                    
+                    container.appendChild(toast);
+                    
+                    setTimeout(() => {
+                        toast.style.animation = 'fadeOut 0.4s ease forwards';
+                        setTimeout(() => toast.remove(), 400);
+                    }, 4000);
+                }
+            });
+            </script></body></html>

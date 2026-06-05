@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UVLED / UV Curing Silk Screen Ink - FORDIA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary-container": "#002251",
+                      "outline": "#74777e",
+                      "tertiary-fixed": "#d8e2ff",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-fixed-variant": "#004493",
+                      "tertiary-fixed-dim": "#adc6ff",
+                      "primary-container": "#0a2540",
+                      "secondary": "#a04100",
+                      "on-tertiary-fixed": "#001a41",
+                      "on-secondary-container": "#572000",
+                      "on-surface-variant": "#43474d",
+                      "on-error": "#ffffff",
+                      "surface-container-high": "#dce9ff",
+                      "on-primary-fixed": "#001c37",
+                      "surface-container": "#e5eeff",
+                      "on-primary-fixed-variant": "#314865",
+                      "on-tertiary": "#ffffff",
+                      "on-background": "#0b1c30",
+                      "on-primary-container": "#768dad",
+                      "on-secondary-fixed-variant": "#7a3000",
+                      "surface-dim": "#cbdbf5",
+                      "primary": "#000f22",
+                      "inverse-on-surface": "#eaf1ff",
+                      "error": "#ba1a1a",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary-fixed": "#ffdbcc",
+                      "inverse-primary": "#b0c8eb",
+                      "primary-fixed": "#d2e4ff",
+                      "on-surface": "#0b1c30",
+                      "surface-container-highest": "#d3e4fe",
+                      "on-tertiary-container": "#3c88ff",
+                      "tertiary": "#000d28",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed": "#351000",
+                      "secondary-container": "#fe6b00",
+                      "surface": "#f8f9ff",
+                      "surface-container-low": "#eff4ff",
+                      "secondary-fixed-dim": "#ffb693",
+                      "on-error-container": "#93000a",
+                      "inverse-surface": "#213145",
+                      "background": "#f8f9ff",
+                      "surface-tint": "#49607e",
+                      "primary-fixed-dim": "#b0c8eb",
+                      "surface-bright": "#f8f9ff",
+                      "outline-variant": "#c4c6ce",
+                      "on-secondary": "#ffffff",
+                      "surface-variant": "#d3e4fe"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "max-width": "1440px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "16px",
+                      "gutter": "24px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "headline-xl-mobile": [
+                              "Inter"
+                      ],
+                      "headline-sm": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "headline-xl": [
+                              "Inter"
+                      ],
+                      "body-sm": [
+                              "Inter"
+                      ],
+                      "label-sm": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-xl-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "44px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-sm": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-xl": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "14px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tech-glow {
+            box-shadow: 0px 4px 20px rgba(10, 37, 64, 0.08);
+        }
+      </style>
+<meta content="UVLED / UV Curing Silk Screen Ink - FORDIA - Industrial screen printing inks with high opacity and durability for plastics, metals, textiles, and glass surfaces." name="description"/><meta content="UVLED / UV Curing Silk Screen Ink - FORDIA" property="og:title"/><meta content="UVLED / UV Curing Silk Screen Ink - FORDIA - Industrial screen printing inks with high opacity and durability for plastics, metals, textiles, and glass surfaces." property="og:description"/><meta content="website" property="og:type"/><meta content="https://yourusername.github.io/fordia-website/uvled_uv_curing_silk_screen_ink_fordia_updated_header_breadcrumbs.html" property="og:url"/><meta content="FORDIA Industrial Solutions" property="og:site_name"/></head>
+<body class="bg-surface text-on-surface font-body-md antialiased pt-20">
+<!-- TopNavBar Component -->
+<header class="bg-surface fixed top-0 w-full z-50 border-b border-outline-variant transition-all duration-300 shadow-md" id="global-header">
+<!-- Top Utility Bar -->
+<div class="bg-primary text-on-primary py-2 px-margin-mobile md:px-margin-desktop border-b border-primary-container">
+<div class="max-w-max-width mx-auto flex justify-between items-center text-label-sm font-label-sm">
+<div class="flex items-center gap-6">
+<a class="flex items-center gap-2 hover:text-secondary-fixed transition-colors" href="mailto:paul.qiu@fordiagroup.com">
+<span class="material-symbols-outlined text-sm">mail</span>
+                    paul.qiu@fordiagroup.com
+                </a>
+<a class="flex items-center gap-2 hover:text-secondary-fixed transition-colors" href="tel:+8617612334939">
+<span class="material-symbols-outlined text-sm">phone</span>
+                    +86 17612334939
+                </a>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-1 cursor-pointer hover:text-secondary-fixed transition-colors">
+<span class="material-symbols-outlined text-sm">language</span>
+<span class="">English</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</div>
+<button aria-label="Search" class="hover:text-secondary-fixed transition-colors flex items-center">
+<span class="material-symbols-outlined text-sm">search</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Main Navigation Bar -->
+<div class="h-20 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto flex justify-between items-center">
+<!-- Brand -->
+<a class="text-headline-md font-headline-md font-bold tracking-tight text-primary flex items-center gap-2" href="index.html">
+            FORDIA
+        </a>
+<!-- Navigation Links -->
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-label-md font-label-md" href="index.html">HOME</a>
+<div class="group relative inline-block h-full flex items-center">
+<a class="text-secondary border-b-2 border-secondary pb-1 text-label-md font-label-md flex items-center gap-1 cursor-default" href="products_landing_fordia_with_navigation.html">
+        PRODUCTS
+        <span class="material-symbols-outlined text-sm transition-transform duration-200 group-hover:rotate-180">expand_more</span>
+</a>
+<div class="absolute top-full left-0 mt-0 w-[480px] bg-surface border border-outline-variant shadow-xl rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-[100] transform -translate-x-1/4">
+<div class="p-6 grid grid-cols-2 gap-x-8 gap-y-4">
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md font-body-md block" href="fordia_underpacking_paper_detail.html">FORDIA Underpacking Paper</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md font-body-md block" href="fordia_underpacking_film_detail.html">FORDIA Underpacking Film</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md font-body-md block" href="conventional_offset_ink_fordia_updated_header.html">Offset Ink</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md font-body-md block" href="flexo_ink_fordia_updated_header.html">Flexo Ink</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md font-body-md block" href="silk_screen_ink_fordia_updated_header.html">Silk Screen Ink</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md font-body-md block" href="varnish_ink_fordia_updated_header.html">Varnish Ink</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md font-body-md block" href="printing_materials_fordia_updated_plastic_ink_knife_image.html">Printing Materials</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md font-body-md block" href="printing_chemicals_fordia_3_column_grid.html">Printing Chemical</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md font-body-md block" href="printing_spare_parts_fordia.html">Printing Spare Parts</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-body-md font-body-md block" href="products_landing_fordia_with_navigation.html">Other Products</a>
+</div>
+</div>
+</div>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-label-md font-label-md" href="news_media_fordia_updated_header.html">NEWS</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-label-md font-label-md" href="case_studies_applications_fordia_updated_header.html">CASE</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-label-md font-label-md" href="about_us_fordia_updated_factory_images.html">ABOUT US</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors text-label-md font-label-md" href="contact_us_fordia_updated_header.html">CONTACT US</a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<button class="hidden md:flex bg-secondary text-on-secondary px-6 py-2 rounded font-label-md text-label-md hover:opacity-90 transition-opacity items-center gap-2">
+                Request Quote
+            </button>
+<button aria-label="Menu" class="lg:hidden text-on-surface-variant">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Page Header -->
+<nav aria-label="Breadcrumb" class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto pt-8 flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant">
+<a class="hover:text-secondary transition-colors" href="index.html">Home</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<a class="hover:text-secondary transition-colors" href="products_landing_fordia_with_navigation.html">Products</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<a class="hover:text-secondary transition-colors" href="silk_screen_ink_fordia_updated_header.html">Silk Screen Ink</a>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+<a class="text-primary font-bold" href="silk_screen_ink_fordia_updated_header.html">UVLED / UV Curing Silk Screen Ink</a>
+</nav><section class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto pb-16 pt-8">
+<div class="max-w-3xl">
+<h1 class="text-headline-xl-mobile md:text-headline-xl font-headline-xl-mobile md:font-headline-xl text-primary mb-4">
+                UVLED / UV Curing Silk Screen Ink
+            </h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant">
+                Advanced formulated inks engineered for high-speed industrial printing, offering superior adhesion, rapid curing, and exceptional vibrance across diverse substrates.
+            </p>
+</div>
+</section>
+<!-- Product Listing - Bento/Asymmetric Grid -->
+<main class="pb-24 px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 gap-gutter">
+<!-- Product 1 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col md:flex-row tech-glow group transition-all duration-300 hover:border-primary-container">
+<div class="md:w-1/2 relative min-h-[300px] bg-surface-container-low">
+<img alt="" class="absolute inset-0 w-full h-full object-cover" data-alt="Close up of a high precision industrial screen printing press applying a glossy spot finish to a premium packaging material. Cool, technical lighting highlights the wet ink texture." src="./assets/images/img_8e5fdbff1dfddcc1cf85b7233d833425.jpg"/>
+</div>
+<div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+<div class="mb-4">
+<span class="inline-block px-3 py-1 bg-surface-variant text-on-surface-variant text-label-sm font-label-sm rounded mb-4">Spot Finish</span>
+<h2 class="text-headline-md font-headline-md text-primary mb-3">UV Screen Spot Printing Ink</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+                            Applicable materials : Paper, BOPP matt film, PVC, PC, ABS, KT board, synthetic paper, etc. Applicable scope : Brochure, stationery, cardboard, product tags and nameplate, daily necessary products packaging, etc.
+                        </p>
+</div>
+<div>
+<a class="inline-flex items-center justify-center border border-primary text-primary px-6 py-2 rounded font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" href="silk_screen_ink_fordia_updated_header.html">View Details</a>
+</div>
+</div>
+</article>
+<!-- Product 2 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col md:flex-row-reverse tech-glow group transition-all duration-300 hover:border-primary-container">
+<div class="md:w-1/2 relative min-h-[300px] bg-surface-container-low">
+<img alt="" class="absolute inset-0 w-full h-full object-cover" data-alt="Wide shot of a continuous industrial screen printing line in a modern, clean factory. Large rolls of graphic material being processed under bright, even factory lighting." src="./assets/images/img_58950965af2c1c5cb4c4da94e663a9b9.jpg"/>
+</div>
+<div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+<div class="mb-4">
+<span class="inline-block px-3 py-1 bg-surface-variant text-on-surface-variant text-label-sm font-label-sm rounded mb-4">Universal Series</span>
+<h2 class="text-headline-md font-headline-md text-primary mb-3">UV Screen Printing Ink</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+                            Applicable materials : Paper, BOPP matt film, PVC, PC, ABS, KT board, synthetic paper, etc. Applicable scope : stationery, cardboard, ad products, daily necessary products packaging，electronic products packaging, etc.
+                        </p>
+</div>
+<div>
+<a class="inline-flex items-center justify-center border border-primary text-primary px-6 py-2 rounded font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" href="silk_screen_ink_fordia_updated_header.html">View Details</a>
+</div>
+</div>
+</article>
+<!-- Product 3 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col md:flex-row tech-glow group transition-all duration-300 hover:border-primary-container">
+<div class="md:w-1/2 relative min-h-[300px] bg-surface-container-low">
+<img alt="" class="absolute inset-0 w-full h-full object-cover" data-alt="Macro photography of a unique, textured 'ice flower' crystalline pattern on a metallic surface, created by a specialized UV varnish. Moody, directional lighting emphasizing the texture." src="./assets/images/img_6009e6920ae85811f950fe78289e73ed.jpg"/>
+</div>
+<div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+<div class="mb-4">
+<span class="inline-block px-3 py-1 bg-surface-variant text-on-surface-variant text-label-sm font-label-sm rounded mb-4">Decorative Varnish</span>
+<h2 class="text-headline-md font-headline-md text-primary mb-3">UV Screen Varnish Formed Ice Flower</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6">
+                            A specialized decorative effect varnish for unique textured finishes. Cures to create a distinctive, tactile 'ice flower' pattern, ideal for high-end cosmetic packaging and specialized electronics enclosures.
+                        </p>
+</div>
+<div>
+<a class="inline-flex items-center justify-center border border-primary text-primary px-6 py-2 rounded font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" href="silk_screen_varnish_fordia_updated_header.html">View Details</a>
+</div>
+</div>
+</article><article class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col md:flex-row-reverse tech-glow group transition-all duration-300 hover:border-primary-container"><div class="md:w-1/2 relative min-h-[300px] bg-surface-container-low"><img alt="LEDUV Screen Ink for Paper/Film" class="absolute inset-0 w-full h-full object-cover" src="./assets/images/img_64b83cf4e3cb36cd4b07f09b9c9c03a3.jpg"/></div><div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center"><div class="mb-4"><span class="inline-block px-3 py-1 bg-surface-variant text-on-surface-variant text-label-sm font-label-sm rounded mb-4">Universal Series</span><h2 class="text-headline-md font-headline-md text-primary mb-3">LEDUV Screen Ink for Paper/Film</h2><p class="text-body-md font-body-md text-on-surface-variant mb-6">High-performance LED UV curable ink specifically designed for paper and various films, offering excellent adhesion and high color strength.</p></div><div><a class="inline-flex items-center justify-center border border-primary text-primary px-6 py-2 rounded font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" href="silk_screen_ink_fordia_updated_header.html">View Details</a></div></div></article>
+<!-- Product 4 -->
+<!-- Product 5 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col md:flex-row tech-glow group transition-all duration-300 hover:border-primary-container"><div class="md:w-1/2 relative min-h-[300px] bg-surface-container-low"><img alt="UVLED Screen Ink for Aluminum" class="absolute inset-0 w-full h-full object-cover" src="./assets/images/img_6a7fb67695f33fad10f122015621b3f7.jpg"/></div><div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center"><div class="mb-4"><span class="inline-block px-3 py-1 bg-surface-variant text-on-surface-variant text-label-sm font-label-sm rounded mb-4">Metal Series</span><h2 class="text-headline-md font-headline-md text-primary mb-3">UVLED Screen Ink for Aluminum</h2><p class="text-body-md font-body-md text-on-surface-variant mb-6">Specially formulated UV LED ink for aluminum and metallic substrates, providing exceptional durability and scratch resistance.</p></div><div><a class="inline-flex items-center justify-center border border-primary text-primary px-6 py-2 rounded font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" href="#">View Details</a></div></div></article>
+<!-- Product 6 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-lg overflow-hidden flex flex-col md:flex-row-reverse tech-glow group transition-all duration-300 hover:border-primary-container"><div class="md:w-1/2 relative min-h-[300px] bg-surface-container-low"><img alt="UV LED Screen Printing Ink for Plastic" class="w-full h-full object-cover" src="./assets/images/img_7f8748307015c5b2e5ec6c5384c5a2f3.jpg"/></div><div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center"><div class="mb-4"><span class="inline-block px-3 py-1 bg-surface-variant text-on-surface-variant text-label-sm font-label-sm rounded mb-4">Plastic Series</span><h2 class="text-headline-md font-headline-md text-primary mb-3">UV LED Screen Printing Ink for Plastic</h2><p class="text-body-md font-body-md text-on-surface-variant mb-6">Versatile LED UV ink for various plastic substrates including PVC, PC, and ABS, featuring high gloss and fast curing speeds.</p></div><div><a class="inline-flex items-center justify-center border border-primary text-primary px-6 py-2 rounded font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-colors" href="silk_screen_ink_fordia_updated_header.html">View Details</a></div></div></article></div>
+</main>
+<!-- Footer Component -->
+<footer class="bg-primary w-full py-16 border-t border-primary-container">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="col-span-1 md:col-span-1 mb-8 md:mb-0">
+<h3 class="text-headline-sm font-headline-sm font-bold text-on-primary mb-4">FORDIA</h3>
+<p class="text-body-sm font-body-sm text-primary-fixed-dim">
+                    Advanced Industrial Materials Technology.
+                </p>
+</div>
+<div class="col-span-1 md:col-span-3 grid grid-cols-2 md:grid-cols-3 gap-8">
+<div>
+<h4 class="text-label-sm font-label-sm text-on-primary mb-4 uppercase tracking-wider">Resources</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-body-sm font-body-sm text-primary-fixed-dim hover:text-on-primary hover:underline decoration-secondary transition-colors" href="products_landing_fordia_with_navigation.html">Product Catalog</a></li>
+<li class=""><a class="text-body-sm font-body-sm text-primary-fixed-dim hover:text-on-primary hover:underline decoration-secondary transition-colors" href="#">Technical Data Sheets</a></li>
+<li class=""><a class="text-body-sm font-body-sm text-primary-fixed-dim hover:text-on-primary hover:underline decoration-secondary transition-colors" href="#">Material Safety</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-label-sm font-label-sm text-on-primary mb-4 uppercase tracking-wider">Company</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-body-sm font-body-sm text-primary-fixed-dim hover:text-on-primary hover:underline decoration-secondary transition-colors" href="#">Global Distribution</a></li>
+<li class=""><a class="text-body-sm font-body-sm text-primary-fixed-dim hover:text-on-primary hover:underline decoration-secondary transition-colors" href="contact_us_fordia_updated_header.html">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1 mt-8 md:mt-0">
+<h4 class="text-label-sm font-label-sm text-on-primary mb-4 uppercase tracking-wider">Legal</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-body-sm font-body-sm text-primary-fixed-dim hover:text-on-primary hover:underline decoration-secondary transition-colors" href="#">Terms of Service</a></li>
+<li class=""><a class="text-body-sm font-body-sm text-primary-fixed-dim hover:text-on-primary hover:underline decoration-secondary transition-colors" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto mt-16 pt-8 border-t border-primary-container">
+<p class="text-body-sm font-body-sm text-primary-fixed-dim">
+                © 2024 FORDIA Industrial Materials Technology. All rights reserved.
+            </p>
+</div>
+</footer>
+<script>
+        // Simple scroll handler for header elevation effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('global-header');
+            if (window.scrollY > 10) {
+                header.classList.add('shadow-md');
+                header.classList.remove('shadow-sm');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.add('shadow-sm');
+            }
+        });
+    </script>
+<script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // 1. Intercept all form submissions (e.g. Inquiries, Contact Forms, Quotes)
+                const forms = document.querySelectorAll('form');
+                forms.forEach(form => {
+                    form.addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        
+                        // Basic validation
+                        const emailInput = form.querySelector('input[type="email"]');
+                        if (emailInput && !emailInput.value.includes('@')) {
+                            showToast('请输入有效的邮箱地址！', 'error');
+                            return;
+                        }
+                        
+                        // Show premium success toast
+                        showToast('询盘提交成功！感谢您的垂询，我们的团队会尽快与您联系。', 'success');
+                        
+                        // Reset form
+                        form.reset();
+                    });
+                });
+
+                // 2. Enhance generic buttons/links with smooth interactions
+                const buttons = document.querySelectorAll('button:not([type="submit"]), a[href="#"]');
+                buttons.forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const text = btn.innerText.trim().toLowerCase();
+                        if (text === 'request quote' || text === 'contact us') {
+                            const contactSection = document.querySelector('form');
+                            if (contactSection) {
+                                e.preventDefault();
+                                contactSection.scrollIntoView({ behavior: 'smooth' });
+                            } else {
+                                window.location.href = 'contact_us_fordia_updated_header.html';
+                            }
+                        } else if (btn.tagName === 'A' && btn.getAttribute('href') === '#') {
+                            e.preventDefault();
+                            showToast('该功能正在开发中！请访问产品页面查看详情。', 'info');
+                        }
+                    });
+                });
+
+                // 3. Mobile Menu toggle handler
+                const menuBtn = document.querySelector('header button.lg\\:hidden, header button.md\\:hidden');
+                if (menuBtn) {
+                    menuBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        const nav = document.querySelector('header nav');
+                        if (nav) {
+                            if (nav.classList.contains('hidden')) {
+                                nav.classList.remove('hidden');
+                                nav.classList.add('flex', 'flex-col', 'absolute', 'top-20', 'left-0', 'w-full', 'bg-surface', 'border-b', 'border-outline-variant', 'p-6', 'gap-4', 'shadow-lg');
+                            } else {
+                                nav.classList.add('hidden');
+                                nav.classList.remove('flex', 'flex-col', 'absolute', 'top-20', 'left-0', 'w-full', 'bg-surface', 'border-b', 'border-outline-variant', 'p-6', 'gap-4', 'shadow-lg');
+                            }
+                        }
+                    });
+                }
+
+                // 4. Create and inject Toast notification CSS & Container
+                function showToast(message, type = 'success') {
+                    let container = document.getElementById('toast-container');
+                    if (!container) {
+                        container = document.createElement('div');
+                        container.id = 'toast-container';
+                        container.className = 'fixed bottom-5 right-5 z-[9999] flex flex-col gap-3 max-w-sm w-full px-4 md:px-0';
+                        document.body.appendChild(container);
+                        
+                        if (!document.getElementById('toast-styles')) {
+                            const style = document.createElement('style');
+                            style.id = 'toast-styles';
+                            style.textContent = `
+                                @keyframes slideIn {
+                                    from { transform: translateX(100%); opacity: 0; }
+                                    to { transform: translateX(0); opacity: 1; }
+                                }
+                                @keyframes fadeOut {
+                                    to { transform: translateY(-10px); opacity: 0; }
+                                }
+                                .toast-card {
+                                    animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+                                    backdrop-filter: blur(12px);
+                                    -webkit-backdrop-filter: blur(12px);
+                                }
+                            `;
+                            document.head.appendChild(style);
+                        }
+                    }
+
+                    const toast = document.createElement('div');
+                    let bgColor = 'bg-slate-900/95 text-white border-slate-700/50';
+                    let icon = 'info';
+                    
+                    if (type === 'success') {
+                        bgColor = 'bg-emerald-900/95 text-emerald-50 border-emerald-500/30';
+                        icon = 'check_circle';
+                    } else if (type === 'error') {
+                        bgColor = 'bg-rose-900/95 text-rose-50 border-rose-500/30';
+                        icon = 'error';
+                    }
+                    
+                    toast.className = `toast-card flex items-start gap-3 p-4 rounded-xl border shadow-lg ${bgColor}`;
+                    toast.innerHTML = `
+                        <span class="material-symbols-outlined text-[20px] shrink-0">${icon}</span>
+                        <div class="flex-grow text-sm font-medium leading-5">${message}</div>
+                        <button class="text-white/40 hover:text-white transition-colors ml-auto shrink-0" onclick="this.parentElement.remove()">
+                            <span class="material-symbols-outlined text-[16px]">close</span>
+                        </button>
+                    `;
+                    
+                    container.appendChild(toast);
+                    
+                    setTimeout(() => {
+                        toast.style.animation = 'fadeOut 0.4s ease forwards';
+                        setTimeout(() => toast.remove(), 400);
+                    }, 4000);
+                }
+            });
+            </script></body></html>
