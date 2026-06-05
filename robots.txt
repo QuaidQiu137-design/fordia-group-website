@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yourusername.github.io/fordia-website/sitemap.xml
+Sitemap: https://www.fordiagroup.com/sitemap.xml
